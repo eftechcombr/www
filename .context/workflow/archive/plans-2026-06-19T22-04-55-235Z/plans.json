@@ -1,0 +1,14 @@
+{
+  "active": [
+    {
+      "slug": "add-whatsapp-link",
+      "path": "plans/add-whatsapp-link.md",
+      "title": "Add WhatsApp link (55 85 98803-7625) to site",
+      "summary": "Add WhatsApp contact link to EF-TECH website contato pages (pt-br and en), header/footer menus, and enable WhatsApp sharing on articles. The WhatsApp number is 5585988037625.",
+      "linkedAt": "2026-06-19T21:46:24.772Z",
+      "status": "active"
+    }
+  ],
+  "completed": [],
+  "primary": "add-whatsapp-link"
+}
