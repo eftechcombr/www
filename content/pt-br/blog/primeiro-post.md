@@ -3,7 +3,7 @@ title: "5 beneficios da migracao para cloud em 2026"
 description: "Descubra os principais beneficios de migrar sua infraestrutura para a nuvem em 2026"
 summary: "Reducao de custos, escalabilidade, seguranca, agilidade e inovacao: confira 5 motivos para migrar para cloud em 2026."
 date: 2026-01-15
-draft: true
+draft: false
 tags: ["cloud", "migracao", "aws", "gcp", "azure"]
 categories: ["cloud-computing"]
 ---
