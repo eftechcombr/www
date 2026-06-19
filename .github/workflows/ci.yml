@@ -22,5 +22,5 @@ jobs:
       - name: Link check
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress public/**/*.html
+          args: --verbose --no-progress --root-dir ${{ github.workspace }}/public public/**/*.html
           fail: true
