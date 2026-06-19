@@ -37,3 +37,7 @@ Welcome to the repository knowledge base. Start with the project overview, then 
 | Data Flow & Integrations | `data-flow.md` | System diagrams, integration specs, queue topics |
 | Security & Compliance Notes | `security.md` | Auth model, secrets management, compliance requirements |
 | Tooling & Productivity Guide | `tooling.md` | CLI scripts, IDE configs, automation workflows |
+
+## Recent Blog Posts
+- [Supabase agora é um app oficial do ChatGPT](../../content/pt-br/blog/supabase-chatgpt-app.md) (pt-br) — Supabase becomes official ChatGPT app with 29 integrated tools
+- [Supabase Is Now an Official ChatGPT App](../../content/en/blog/supabase-chatgpt-app.md) (en) — English version of the same announcement
