@@ -44,6 +44,12 @@
   url = "https://youtube.com/@eftechcombr"
   weight = 70
 
+[[main]]
+  identifier = "whatsapp"
+  pre = "whatsapp"
+  url = "https://wa.me/5585988037625"
+  weight = 80
+
 # -- Footer Menu --
 
 [[footer]]
@@ -60,3 +66,8 @@
   name = "YouTube"
   url = "https://youtube.com/@eftechcombr"
   weight = 30
+
+[[footer]]
+  name = "WhatsApp"
+  url = "https://wa.me/5585988037625"
+  weight = 40

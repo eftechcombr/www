@@ -20,6 +20,7 @@ For ticket submission and tracking, access our GLPI portal:
 
 ### Social Media
 
+- **WhatsApp**: [https://wa.me/5585988037625](https://wa.me/5585988037625)
 - **GitHub**: [https://github.com/eftechcombr](https://github.com/eftechcombr)
 - **YouTube**: [https://youtube.com/@eftechcombr](https://youtube.com/@eftechcombr)
 
