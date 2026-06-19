@@ -1,56 +1,56 @@
 ---
 title: "GLPI"
-description: "GLPI - software livre de gestao de ativos de TI e service desk ITIL com deploy containerizado pela EF-TECH"
-summary: "GLPI e um software livre de gestao de ativos de TI e service desk ITIL. A EF-TECH oferece deploy containerizado via Docker e Kubernetes com Helm chart, hosting gerenciado e suporte dedicado."
+description: "GLPI - software livre de gestão de ativos de TI e service desk ITIL com deploy containerizado pela EF-TECH"
+summary: "GLPI é um software livre de gestão de ativos de TI e service desk ITIL. A EF-TECH oferece deploy containerizado via Docker e Kubernetes com Helm chart, hosting gerenciado e suporte dedicado."
 date: 2026-06-19
 tags: ["glpi", "service-desk", "itil", "inventario", "kubernetes"]
 categories: ["produtos"]
 ---
 ## GLPI
 
-GLPI (Gestionnaire Libre de Parc Informatique) e um software livre de gestao de ativos de TI e service desk ITIL. Como solucao open source, oferece recursos para inventario de hardware e software, abertura e controle de chamados, rastreamento de licencas e auditoria de software. O projeto e mantido pela comunidade no [GitHub](https://github.com/glpi-project/glpi) e distribuido sob licenca GPL-3.0. A EF-TECH especializa-se no deploy containerizado e no hosting gerenciado do GLPI, levando a versatilidade do software livre para ambientes de producao robustos e seguros.
+GLPI (Gestionnaire Libre de Parc Informatique) é um software livre de gestão de ativos de TI e service desk ITIL. Como solução open source, oferece recursos para inventário de hardware e software, abertura e controle de chamados, rastreamento de licenças e auditoria de software. O projeto é mantido pela comunidade no [GitHub](https://github.com/glpi-project/glpi) e distribuído sob licença GPL-3.0. A EF-TECH especializa-se no deploy containerizado e no hosting gerenciado do GLPI, levando a versatilidade do software livre para ambientes de produção robustos e seguros.
 
 ### Service Desk ITIL
 
 O GLPI implementa os processos ITIL para service desk, permitindo centralizar e organizar todo o atendimento de TI:
 
-- Gestao de incidentes e problemas
-- Gestao de mudancas
-- Acordos de Nivel de Servico (SLA) e escalonamento
+- Gestão de incidentes e problemas
+- Gestão de mudanças
+- Acordos de Nível de Serviço (SLA) e escalonamento
 - Base de conhecimento (knowledge base)
-- Catalogo de servicos
-- Formularios de solicitacao de servico (service catalog)
+- Catálogo de serviços
+- Formulários de solicitação de serviço (service catalog)
 
-### Gestao de Ativos e Inventario
+### Gestão de Ativos e Inventário
 
-A gestao de ativos do GLPI mantem o inventario de TI sempre atualizado e rastreavel:
+A gestão de ativos do GLPI mantém o inventário de TI sempre atualizado e rastreável:
 
-- Inventario automatico de hardware via agentes
+- Inventário automático de hardware via agentes
 - Descoberta de rede (network discovery)
-- Rastreamento de equipamentos por localizacao, usuario e estado
-- Gestao do ciclo de vida de ativos
-- Integracao com ferramentas de inventario (OCS Inventory, FusionInventory)
+- Rastreamento de equipamentos por localização, usuário e estado
+- Gestão do ciclo de vida de ativos
+- Integração com ferramentas de inventário (OCS Inventory, FusionInventory)
 
-### Rastreamento de Licencas e Auditoria de Software
+### Rastreamento de Licenças e Auditoria de Software
 
-O GLPI ajuda a manter a conformidade de licencas e contratos de software:
+O GLPI ajuda a manter a conformidade de licenças e contratos de software:
 
-- Controle de licencas de software e compliance
+- Controle de licenças de software e compliance
 - Auditoria de software instalado
-- Alertas de vencimento de licencas
-- Gestao de contratos e garantias
-- Relatorios de conformidade
+- Alertas de vencimento de licenças
+- Gestão de contratos e garantias
+- Relatórios de conformidade
 
 ### Deploy Containerizado pela EF-TECH
 
-A EF-TECH entrega o GLPI pronto para producao com imagens Docker e Helm charts mantidos pela nossa equipe:
+A EF-TECH entrega o GLPI pronto para produção com imagens Docker e Helm charts mantidos pela nossa equipe:
 
 - Imagens Docker oficiais: `eftechcombr/glpi` no Docker Hub
 - GLPI 11.0.7 com PHP 8.4 e Nginx
 - Deploy via Docker Compose para ambientes locais e de teste
 - Deploy via Kubernetes com Helm chart
 - Helm chart repository: `helm repo add eftechcombr https://eftechcombr.github.io/glpi/`
-- Instalacao simples: `helm install my-glpi eftechcombr/glpi`
+- Instalação simples: `helm install my-glpi eftechcombr/glpi`
 - Arquitetura com PHP-FPM, Nginx, MariaDB e Redis
 - Suporte a Ingress, Persistent Volumes e auto-scaling no Kubernetes
 - Repositorio: https://github.com/eftechcombr/glpi
@@ -62,9 +62,9 @@ Para quem prefere focar no negocio, a EF-TECH oferece hosting gerenciado complet
 - Hosting gerenciado com monitoramento 24/7
 - Portal de suporte disponivel em https://glpi.eftech.com.br
 - Backup automatizado e disaster recovery
-- Atualizacoes e patching gerenciados
-- Suporte tecnico dedicado
-- Configuracao personalizada de fluxos de trabalho e categorias
+- Atualizações e patching gerenciados
+- Suporte técnico dedicado
+- Configuração personalizada de fluxos de trabalho e categorias
 
 ---
 

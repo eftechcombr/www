@@ -1,70 +1,70 @@
 ---
-title: "Seguranca"
-description: "Firewall, WAF, SIEM, conformidade LGPD, testes de invasao e recuperacao de desastres"
-summary: "Protecao completa para seu ambiente cloud: firewall, WAF, SIEM, LGPD, pentest e backup com disaster recovery."
+title: "Segurança"
+description: "Firewall, WAF, SIEM, conformidade LGPD, testes de invasão e recuperação de desastres"
+summary: "Proteção completa para seu ambiente cloud: firewall, WAF, SIEM, LGPD, pentest e backup com disaster recovery."
 date: 2026-01-15
 tags: ["seguranca", "lgpd", "siem", "firewall"]
 categories: ["servicos"]
 ---
 
-## Seguranca Cloud
+## Segurança Cloud
 
-A seguranca da sua infraestrutura e dos seus dados e nossa prioridade. A EF-TECH implementa camadas multiplas de protecao para garantir que seu ambiente cloud seja resiliente contra ameacas.
+A segurança da sua infraestrutura e dos seus dados é nossa prioridade. A EF-TECH implementa camadas múltiplas de proteção para garantir que seu ambiente cloud seja resiliente contra ameaças.
 
 ### Firewall e WAF
 
-Configuracao e gestao de firewalls de rede e Web Application Firewalls para protecao contra ataques de camada de aplicacao.
+Configuração e gestão de firewalls de rede e Web Application Firewalls para proteção contra ataques de camada de aplicação.
 
 - Firewall rules (Security Groups, NACLs)
 - WAF com regras OWASP Top 10
-- Protecao contra DDoS
+- Proteção contra DDoS
 - Rate limiting e geo-blocking
 
 ### SIEM (Security Information and Event Management)
 
-Centralizacao e correlacao de logs de seguranca para deteccao proativa de ameacas e resposta a incidentes.
+Centralização e correlação de logs de segurança para detecção proativa de ameaças e resposta a incidentes.
 
 - Coleta de logs de multiplas fontes
-- Correlacao de eventos e alertas em tempo real
-- Dashboards de seguranca e compliance
+- Correlação de eventos e alertas em tempo real
+- Dashboards de segurança e compliance
 - Resposta a incidentes automatizada
 
 ### Conformidade com LGPD
 
-Adequacao da sua infraestrutura cloud aos requisitos da Lei Geral de Protecao de Dados (LGPD).
+Adequação da sua infraestrutura cloud aos requisitos da Lei Geral de Proteção de Dados (LGPD).
 
 - Mapeamento de dados pessoais
 - Controles de acesso e criptografia
-- Politicas de retencao e exclusao
-- Auditoria e documentacao de compliance
+- Políticas de retenção e exclusão
+- Auditoria e documentação de compliance
 
 ### Testes de Invasao (Pentest)
 
-Simulacao de ataques controlados para identificar vulnerabilidades antes que sejam exploradas.
+Simulação de ataques controlados para identificar vulnerabilidades antes que sejam exploradas.
 
 - Pentest de infraestrutura cloud
 - Pentest de aplicacoes web
-- Analise de configuracao de seguranca
-- Relatorio tecnico + executivo com recomendacoes
+- Análise de configuração de segurança
+- Relatório técnico + executivo com recomendações
 
 ### Backup e Disaster Recovery
 
-Estrategia de backup e recuperacao de desastres para garantir a continuidade do seu negocio em qualquer cenario.
+Estratégia de backup e recuperação de desastres para garantir a continuidade do seu negócio em qualquer cenário.
 
 - Backup automatizado multi-regiao
-- Testes de restauracao periodicos
-- RTO e RPO definidos por aplicacao
+- Testes de restauração periódicos
+- RTO e RPO definidos por aplicação
 - Disaster recovery plan documentado
 
 ### Zero Trust Architecture
 
-Implementacao do modelo Zero Trust, onde cada acesso e verificado independente de origem.
+Implementação do modelo Zero Trust, onde cada acesso é verificado independente de origem.
 
 - Identity and Access Management (IAM)
 - Multi-factor authentication (MFA)
-- Microsegmentacao de rede
+- Microsegmentação de rede
 - Least privilege access
 
 ---
 
-Proteja seu negocio. [Agende uma avaliacao de seguranca](/pt-br/contato/) com nossa equipe.
+Proteja seu negócio. [Agende uma avaliação de segurança](/pt-br/contato/) com nossa equipe.

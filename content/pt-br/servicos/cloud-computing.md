@@ -1,7 +1,7 @@
 ---
 title: "Cloud Computing"
-description: "Migracao, arquitetura e gestao de infraestrutura em AWS, Google Cloud e Azure"
-summary: "Migracao, arquitetura e gestao de infraestrutura cloud com AWS, GCP e Azure. Escalonamento automatico, serverless e otimizacao de custos."
+description: "Migração, arquitetura e gestão de infraestrutura em AWS, Google Cloud e Azure"
+summary: "Migração, arquitetura e gestão de infraestrutura cloud com AWS, GCP e Azure. Escalonamento automático, serverless e otimização de custos."
 date: 2026-01-15
 tags: ["cloud", "aws", "gcp", "azure"]
 categories: ["servicos"]
@@ -9,16 +9,16 @@ categories: ["servicos"]
 
 ## Cloud Computing
 
-A EF-TECH entrega solucoes completas de cloud computing, desde a migracao inicial ate a gestao continua da sua infraestrutura. Trabalhamos com **AWS**, **Google Cloud Platform** e **Microsoft Azure**.
+A EF-TECH entrega soluções completas de cloud computing, desde a migração inicial até a gestão contínua da sua infraestrutura. Trabalhamos com **AWS**, **Google Cloud Platform** e **Microsoft Azure**.
 
-### Migracao para Cloud
+### Migração para Cloud
 
-Planejamento e execucao de migracao de infraestrutura on-premise para cloud, com minimizacao de downtime e garantia de continuidade do negocio.
+Planejamento e execução de migração de infraestrutura on-premise para cloud, com minimização de downtime e garantia de continuidade do negócio.
 
-- Avaliacao de prontidao para cloud
-- Estrategia de migracao (lift-and-shift, replatforming, refatoracao)
-- Execucao por fases com rollback
-- Validacao e otimizacao pos-migracao
+- Avaliação de prontidão para cloud
+- Estratégia de migração (lift-and-shift, replatforming, refatoração)
+- Execução por fases com rollback
+- Validação e otimização pós-migração
 
 ### Arquitetura Cloud
 
@@ -31,26 +31,26 @@ Desenho de arquiteturas escalaveis, resilient e custo-otimizadas, seguindo as me
 
 ### Escalonamento Automatico
 
-Configuracao de auto-scaling para que sua infraestrutura cresca e diminua conforme a demanda, otimizando custos sem comprometer performance.
+Configuração de auto-scaling para que sua infraestrutura cresça e diminua conforme a demanda, otimizando custos sem comprometer performance.
 
 - Auto-scaling groups (EC2, GCP MIG, Azure VMSS)
 - Escalonamento baseado em metricas customizadas
 - Load balancing e traffic distribution
 - Cost optimization com spot instances e committed use discounts
 
-### Otimizacao de Custos
+### Otimização de Custos
 
-Analise continua de gastos em cloud com identificacao de recursos ociosos, right-sizing e recomendacoes de reserved instances / savings plans.
+Análise contínua de gastos em cloud com identificação de recursos ociosos, right-sizing e recomendações de reserved instances / savings plans.
 
 - Dashboard de custos por equipe/projeto
 - Alertas de budget e anomalias
 - Right-sizing de instancias
 - Lifecycle management de storage
 
-### Servicos Gerenciados
+### Serviços Gerenciados
 
-Gestao completa da sua infraestrutura cloud com monitoramento 24/7, patching, backups e suporte tecnico dedicado.
+Gestão completa da sua infraestrutura cloud com monitoramento 24/7, patching, backups e suporte técnico dedicado.
 
 ---
 
-Interessado? [Entre em contato](/pt-br/contato/) para uma avaliacao gratuita da sua infraestrutura.
+Interessado? [Entre em contato](/pt-br/contato/) para uma avaliação gratuita da sua infraestrutura.
