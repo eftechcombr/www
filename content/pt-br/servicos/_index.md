@@ -7,11 +7,11 @@ A EF-TECH oferece um portifolio completo de servicos para garantir que sua infra
 
 ## Nossos Servicos
 
-### [Cloud Computing](/servicos/cloud-computing/)
+### [Cloud Computing](/pt-br/servicos/cloud-computing/)
 
 Migracao, arquitetura e gestao de infraestrutura em AWS, Google Cloud e Azure. Escalonamento automatico, serverless e otimizacao de custos.
 
-### [Seguranca](/servicos/seguranca/)
+### [Seguranca](/pt-br/servicos/seguranca/)
 
 Protecao completa para seu ambiente: firewall, WAF, SIEM, conformidade com LGPD, testes de invasao e backup com recuperacao de desastres.
 
@@ -25,4 +25,4 @@ Monitoramento 24/7, gestao de incidentes, escalonamento automatico, otimizacao c
 
 ---
 
-Pronto para comecar? [Fale conosco](/contato/) e agende uma consultoria.
+Pronto para comecar? [Fale conosco](/pt-br/contato/) e agende uma consultoria.

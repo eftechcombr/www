@@ -33,4 +33,4 @@ Atendemos empresas de diversos portes â€” de startups a empresas estabelecidas â
 
 ---
 
-Pronto para transformar sua infraestrutura? [Entre em contato](/contato/) e vamos conversar.
+Pronto para transformar sua infraestrutura? [Entre em contato](/pt-br/contato/) e vamos conversar.

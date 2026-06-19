@@ -53,4 +53,4 @@ Gestao completa da sua infraestrutura cloud com monitoramento 24/7, patching, ba
 
 ---
 
-Interessado? [Entre em contato](/contato/) para uma avaliacao gratuita da sua infraestrutura.
+Interessado? [Entre em contato](/pt-br/contato/) para uma avaliacao gratuita da sua infraestrutura.
