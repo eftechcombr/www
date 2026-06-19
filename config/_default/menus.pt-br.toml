@@ -1,0 +1,57 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+
+[[main]]
+  name = "Inicio"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "Servicos"
+  pageRef = "servicos"
+  weight = 20
+
+[[main]]
+  name = "Sobre"
+  pageRef = "sobre"
+  weight = 30
+
+[[main]]
+  name = "Blog"
+  pageRef = "blog"
+  weight = 40
+
+[[main]]
+  name = "Contato"
+  pageRef = "contato"
+  weight = 50
+
+# External links in header
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/eftechcombr"
+  weight = 60
+
+[[main]]
+  identifier = "youtube"
+  pre = "youtube"
+  url = "https://youtube.com/@eftechcombr"
+  weight = 70
+
+# -- Footer Menu --
+
+[[footer]]
+  name = "Suporte"
+  url = "https://glpi.eftech.com.br"
+  weight = 10
+
+[[footer]]
+  name = "GitHub"
+  url = "https://github.com/eftechcombr"
+  weight = 20
+
+[[footer]]
+  name = "YouTube"
+  url = "https://youtube.com/@eftechcombr"
+  weight = 30
