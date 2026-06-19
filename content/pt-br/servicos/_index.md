@@ -23,6 +23,10 @@ Pipeline de CI/CD, Infrastructure as Code com Terraform, gestao de containers co
 
 Monitoramento 24/7, gestao de incidentes, escalonamento automatico, otimizacao continua de custos e relatorios de performance detalhados.
 
+### [GLPI](/pt-br/produtos/glpi/)
+
+Software livre de gestao de ativos de TI e service desk ITIL. Deploy containerizado via Docker e Kubernetes, com hosting gerenciado e suporte dedicado.
+
 ---
 
 Pronto para comecar? [Fale conosco](/pt-br/contato/) e agende uma consultoria.

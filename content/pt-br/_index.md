@@ -17,6 +17,7 @@ Na **EF-TECH**, especializamos em deliversolutions de cloud computing que elevam
 - **Seguranca e Compliance**: Firewall, WAF, SIEM, LGPD e recuperacao de desastres
 - **DevOps e Automacao**: CI/CD, Infrastructure as Code, Kubernetes e containers
 - **Infraestrutura Gerenciada**: Monitoramento 24/7, escalonamento automatico e otimizacao de custos
+- **GLPI**: Software livre de gestao de ativos de TI e service desk ITIL com deploy containerizado
 
 ### Por que EF-TECH?
 
