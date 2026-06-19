@@ -11,4 +11,8 @@ A EF-TECH seleciona, implanta e gerencia solucoes de software livre para gestao 
 
 GLPI e um software livre de gestao de ativos de TI e service desk ITIL. A EF-TECH oferece deploy containerizado via Docker e Kubernetes, com hosting gerenciado e suporte dedicado.
 
+### [WireGuard](/pt-br/produtos/wireguard/)
+
+WireGuard e uma VPN corporativa moderna, containerizada e segura. A EF-TECH oferece deploy via Docker com Alpine Linux, health check automatizado e monitoramento pronto para producao.
+
 Pronto para comecar? [Fale conosco](/pt-br/contato/) e agende uma consultoria.
