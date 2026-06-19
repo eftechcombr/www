@@ -1,14 +1,14 @@
 {
   "active": [
     {
-      "slug": "blog-hermes-k8s-install",
-      "path": "plans/blog-hermes-k8s-install.md",
-      "title": "Blog Hermes K8s Install",
-      "summary": "Create a bilingual blog post (en/pt-br) teaching how to install the Hermes agent on Kubernetes. The post will walk through each Kubernetes resource from the manifests in `../iac/files/kubernetes/hermes`, explaining what each component does and how to deploy them with `kubectl`/`kustomize`. The post should include prerequisites, step-by-step instructions, configuration options, and verification steps.",
-      "linkedAt": "2026-06-19T21:35:06.590Z",
+      "slug": "add-whatsapp-link",
+      "path": "plans/add-whatsapp-link.md",
+      "title": "Add WhatsApp link (55 85 98803-7625) to site",
+      "summary": "Add WhatsApp contact link to EF-TECH website contato pages (pt-br and en), header/footer menus, and enable WhatsApp sharing on articles. The WhatsApp number is 5585988037625.",
+      "linkedAt": "2026-06-19T21:46:24.772Z",
       "status": "active"
     }
   ],
   "completed": [],
-  "primary": "blog-hermes-k8s-install"
+  "primary": "add-whatsapp-link"
 }

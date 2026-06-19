@@ -20,6 +20,7 @@ Para abertura de chamados e acompanhamento de tickets, acesse nosso portal GLPI:
 
 ### Redes Sociais
 
+- **WhatsApp**: [https://wa.me/5585988037625](https://wa.me/5585988037625)
 - **GitHub**: [https://github.com/eftechcombr](https://github.com/eftechcombr)
 - **YouTube**: [https://youtube.com/@eftechcombr](https://youtube.com/@eftechcombr)
 

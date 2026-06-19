@@ -1,52 +1,35 @@
 project:
-  name: "blog-hermes-k8s-install"
-  scale: MEDIUM
-  started: "2026-06-19T21:34:40.521Z"
-  current_phase: V
+  name: "add-whatsapp-link"
+  scale: SMALL
+  started: "2026-06-19T21:46:22.539Z"
+  current_phase: E
 
 phases:
   P:
     status: filled
-    started_at: "2026-06-19T21:34:40.521Z"
-    completed_at: "2026-06-19T21:35:11.278Z"
+    started_at: "2026-06-19T21:46:22.539Z"
+    completed_at: "2026-06-19T21:46:30.841Z"
   R:
-    status: completed
-    started_at: "2026-06-19T21:35:11.279Z"
-    completed_at: "2026-06-19T21:35:16.648Z"
+    status: skipped
+    reason: "Not required for scale SMALL"
   E:
-    status: filled
-    started_at: "2026-06-19T21:35:16.649Z"
-    completed_at: "2026-06-19T21:36:38.732Z"
+    status: in_progress
+    started_at: "2026-06-19T21:46:30.842Z"
   V:
-    status: completed
-    started_at: "2026-06-19T21:36:38.733Z"
-    completed_at: "2026-06-19T21:36:51.239Z"
-    outputs:
-      - path: "content/pt-br/blog/hermes-k8s-install.md"
-        status: filled
-      - path: "content/en/blog/hermes-k8s-install.md"
-        status: filled
+    status: pending
   C:
     status: skipped
-    reason: "Not required for scale MEDIUM"
+    reason: "Not required for scale SMALL"
 
 execution:
   history:
-    - timestamp: "2026-06-19T21:36:51.239Z"
-      phase: V
-      action: completed
-  last_activity: "2026-06-19T21:36:51.239Z"
-  resume_context: "Fase V (Validação) concluída"
-
-settings:
-  autonomous_mode: true
-  require_plan: true
-  require_approval: true
+    - timestamp: "2026-06-19T21:46:30.842Z"
+      phase: E
+      action: started
+  last_activity: "2026-06-19T21:46:30.842Z"
+  resume_context: "Fase E (Execução) em progresso"
 
 approval:
   plan_created: true
-  plan_approved: true
-  approved_by: "solo-dev"
-  approved_at: "2026-06-19T21:35:14.565Z"
-  approval_notes: "Plan reviewed and approved. The outline covers all 8 Kubernetes resources, prerequisites, step-by-step deployment, and verification. Ready to write content."
+  plan_approved: false
 
