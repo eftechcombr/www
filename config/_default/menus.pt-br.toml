@@ -7,7 +7,7 @@
   weight = 10
 
 [[main]]
-  name = "Servicos"
+  name = "Serviços"
   url = "/pt-br/servicos/"
   weight = 20
 
