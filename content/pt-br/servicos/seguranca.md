@@ -67,4 +67,4 @@ Implementacao do modelo Zero Trust, onde cada acesso e verificado independente d
 
 ---
 
-Proteja seu negocio. [Agende uma avaliacao de seguranca](/contato/) com nossa equipe.
+Proteja seu negocio. [Agende uma avaliacao de seguranca](/pt-br/contato/) com nossa equipe.

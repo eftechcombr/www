@@ -63,4 +63,4 @@ Provedores de cloud lancam novos servicos constantemente — IA, machine learnin
 
 A migracao para cloud em 2026 nao e mais uma questao de "se", mas de "quando" e "como". Com o parceiro certo, a transicao pode ser suave, segura e com retorno sobre investimento rapido.
 
-Na **EF-TECH**, ajudamos empresas a planejar e executar migracoes para cloud com minimizacao de riscos e maximizacao de resultados. [Entre em contato](/contato/) para uma avaliacao gratuita.
+Na **EF-TECH**, ajudamos empresas a planejar e executar migracoes para cloud com minimizacao de riscos e maximizacao de resultados. [Entre em contato](/pt-br/contato/) para uma avaliacao gratuita.

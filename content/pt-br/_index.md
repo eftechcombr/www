@@ -25,4 +25,4 @@ Na **EF-TECH**, especializamos em deliversolutions de cloud computing que elevam
 - Atendimento personalizado para cada cliente
 - Suporte tecnico dedicado via portal GLPI
 
-Entre em [contato](/contato/) e descubra como podemos ajudar a transformar sua infraestrutura.
+Entre em [contato](/pt-br/contato/) e descubra como podemos ajudar a transformar sua infraestrutura.
