@@ -1,0 +1,23 @@
+{
+  "planSlug": "oracle-always-free-post",
+  "progress": 100,
+  "phases": {
+    "phase-2": {
+      "phaseId": "phase-2",
+      "status": "completed",
+      "startedAt": "2026-06-19T22:05:55.838Z",
+      "steps": [
+        {
+          "stepIndex": 1,
+          "description": "Step 1",
+          "status": "completed",
+          "completedAt": "2026-06-19T22:05:55.838Z",
+          "output": "content/pt-br/blog/oracle-always-free.md and content/en/blog/oracle-always-free.md"
+        }
+      ],
+      "completedAt": "2026-06-19T22:05:55.838Z"
+    }
+  },
+  "decisions": [],
+  "lastUpdated": "2026-06-19T22:05:55.838Z"
+}
