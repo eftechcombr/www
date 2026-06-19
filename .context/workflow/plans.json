@@ -1,0 +1,14 @@
+{
+  "active": [
+    {
+      "slug": "blog-hermes-k8s-install",
+      "path": "plans/blog-hermes-k8s-install.md",
+      "title": "Blog Hermes K8s Install",
+      "summary": "Create a bilingual blog post (en/pt-br) teaching how to install the Hermes agent on Kubernetes. The post will walk through each Kubernetes resource from the manifests in `../iac/files/kubernetes/hermes`, explaining what each component does and how to deploy them with `kubectl`/`kustomize`. The post should include prerequisites, step-by-step instructions, configuration options, and verification steps.",
+      "linkedAt": "2026-06-19T21:35:06.590Z",
+      "status": "active"
+    }
+  ],
+  "completed": [],
+  "primary": "blog-hermes-k8s-install"
+}
