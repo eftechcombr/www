@@ -1,0 +1,548 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-06-19T11:57:11.263Z",
+  "stack": {
+    "primaryLanguage": "javascript",
+    "languages": [
+      "javascript"
+    ],
+    "frameworks": [],
+    "buildTools": [],
+    "testFrameworks": [],
+    "packageManager": null,
+    "isMonorepo": false,
+    "hasDocker": false,
+    "hasCI": true
+  },
+  "structure": {
+    "totalFiles": 2371,
+    "rootPath": ".",
+    "topDirectories": [
+      {
+        "name": "archetypes",
+        "fileCount": 1,
+        "description": "TypeScript type definitions"
+      },
+      {
+        "name": "assets",
+        "fileCount": 1,
+        "description": "Static assets (images, fonts)"
+      },
+      {
+        "name": "config",
+        "fileCount": 6,
+        "description": "Configuration files"
+      },
+      {
+        "name": "content",
+        "fileCount": 8,
+        "description": "Module directory"
+      },
+      {
+        "name": "data",
+        "fileCount": 0,
+        "description": "Module directory"
+      },
+      {
+        "name": "i18n",
+        "fileCount": 0,
+        "description": "Internationalization"
+      },
+      {
+        "name": "layouts",
+        "fileCount": 0,
+        "description": "Layout components"
+      },
+      {
+        "name": "public",
+        "fileCount": 81,
+        "description": "Public static assets"
+      },
+      {
+        "name": "resources",
+        "fileCount": 5,
+        "description": "Resource definitions"
+      },
+      {
+        "name": "static",
+        "fileCount": 2,
+        "description": "Module directory"
+      },
+      {
+        "name": "themes",
+        "fileCount": 2266,
+        "description": "Theme definitions"
+      }
+    ],
+    "languageDistribution": [
+      {
+        "extension": ".md",
+        "count": 1553
+      },
+      {
+        "extension": ".html",
+        "count": 170
+      },
+      {
+        "extension": ".svg",
+        "count": 170
+      },
+      {
+        "extension": ".webp",
+        "count": 122
+      },
+      {
+        "extension": ".png",
+        "count": 71
+      },
+      {
+        "extension": ".js",
+        "count": 39
+      },
+      {
+        "extension": ".toml",
+        "count": 37
+      },
+      {
+        "extension": ".yaml",
+        "count": 36
+      },
+      {
+        "extension": ".jpg",
+        "count": 33
+      },
+      {
+        "extension": ".css",
+        "count": 30
+      }
+    ]
+  },
+  "architecture": {
+    "layers": [
+      {
+        "name": "Components",
+        "description": "UI components and views",
+        "directories": [
+          "themes/blowfish/scripts"
+        ],
+        "symbolCount": 5,
+        "dependsOn": []
+      },
+      {
+        "name": "Utils",
+        "description": "Shared utilities and helpers",
+        "directories": [
+          "public/lib/zoom",
+          "themes/blowfish/assets/lib/zoom",
+          "themes/blowfish/assets/lib/typeit",
+          "themes/blowfish/assets/lib/tw-elements",
+          "themes/blowfish/assets/lib/packery",
+          "themes/blowfish/assets/lib/mermaid",
+          "themes/blowfish/assets/lib/lite-youtube-embed",
+          "themes/blowfish/assets/lib/katex",
+          "themes/blowfish/assets/lib/chart",
+          "themes/blowfish/assets/lib/fuse"
+        ],
+        "symbolCount": 43,
+        "dependsOn": []
+      }
+    ],
+    "patterns": [],
+    "entryPoints": [],
+    "mainEntryPoints": [],
+    "moduleExports": []
+  },
+  "symbols": {
+    "classes": [
+      {
+        "name": "$",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "$",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "a",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "a",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "B",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "B",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "k",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "k",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "LiteYTEmbed",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/lite-youtube-embed/lite-yt-embed.js",
+        "line": 13,
+        "exported": false,
+        "description": "A lightweight youtube embed. Still should feel the same to the user, just MUCH faster to initialize ..."
+      },
+      {
+        "name": "m",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "m",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "Q",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "Q",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "S",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "S",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "v",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "v",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "Y",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "Y",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "Z",
+        "kind": "class",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "Z",
+        "kind": "class",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      }
+    ],
+    "interfaces": [],
+    "functions": [
+      {
+        "name": "_getDefaultPackeryOptions",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/shortcodes/gallery.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "_getPackeryOptions",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/shortcodes/gallery.js",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "_registerZendModeButtonClick",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/zen-mode.js",
+        "line": 50,
+        "exported": false
+      },
+      {
+        "name": "_toggleZenMode",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/zen-mode.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "activateTab",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/shortcodes/tabs.js",
+        "line": 32,
+        "exported": false
+      },
+      {
+        "name": "buildIndex",
+        "kind": "function",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "buildIndex",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/search.js",
+        "line": 126,
+        "exported": false
+      },
+      {
+        "name": "c",
+        "kind": "function",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "c",
+        "kind": "function",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "c",
+        "kind": "function",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "C",
+        "kind": "function",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "C",
+        "kind": "function",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "convert",
+        "kind": "function",
+        "file": "themes/blowfish/genLang.js",
+        "line": 28,
+        "exported": false
+      },
+      {
+        "name": "convert",
+        "kind": "function",
+        "file": "themes/blowfish/genArticle.js",
+        "line": 10,
+        "exported": false
+      },
+      {
+        "name": "copyCodeToClipboard",
+        "kind": "function",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 14,
+        "exported": false
+      },
+      {
+        "name": "copyCodeToClipboard",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/code.js",
+        "line": 15,
+        "exported": false
+      },
+      {
+        "name": "createConfigs",
+        "kind": "function",
+        "file": "themes/blowfish/genLang.js",
+        "line": 10,
+        "exported": false
+      },
+      {
+        "name": "createContent",
+        "kind": "function",
+        "file": "themes/blowfish/genLang.js",
+        "line": 102,
+        "exported": false
+      },
+      {
+        "name": "createCopyButton",
+        "kind": "function",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 14,
+        "exported": false
+      },
+      {
+        "name": "createCopyButton",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/code.js",
+        "line": 5,
+        "exported": false
+      },
+      {
+        "name": "createLinks",
+        "kind": "function",
+        "file": "themes/blowfish/genLangLinks.js",
+        "line": 63,
+        "exported": false
+      },
+      {
+        "name": "createLinks",
+        "kind": "function",
+        "file": "themes/blowfish/findMissingTranslations.js",
+        "line": 66,
+        "exported": false
+      },
+      {
+        "name": "css",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/mermaid.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "css",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/chart.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "d",
+        "kind": "function",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "d",
+        "kind": "function",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      },
+      {
+        "name": "displaySearch",
+        "kind": "function",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "displaySearch",
+        "kind": "function",
+        "file": "themes/blowfish/assets/js/search.js",
+        "line": 89,
+        "exported": false
+      },
+      {
+        "name": "e",
+        "kind": "function",
+        "file": "public/js/main.bundle.min.8f75559c3b0987cc436337d462a0b075ebdd214d92a8eac880da424282daeece8759e586481872b873dc2eaa92c6a66f083e3be96ab847d926aea25777dfb292.js",
+        "line": 1,
+        "exported": false
+      },
+      {
+        "name": "e",
+        "kind": "function",
+        "file": "themes/blowfish/assets/lib/fuse/fuse.min.cjs",
+        "line": 9,
+        "exported": false
+      }
+    ],
+    "types": [],
+    "enums": []
+  },
+  "publicAPI": [],
+  "dependencies": {
+    "mostImported": []
+  },
+  "stats": {
+    "totalSymbols": 143,
+    "exportedSymbols": 0,
+    "analysisTimeMs": 148
+  },
+  "keyFiles": [
+    {
+      "path": "themes/blowfish/tailwind.config.js",
+      "description": "Tool configuration",
+      "category": "config"
+    }
+  ],
+  "navigation": {
+    "tests": "src/**/*.test.ts",
+    "config": [
+      "package.json"
+    ],
+    "types": [],
+    "mainLogic": [
+      "src"
+    ]
+  }
+}
