@@ -8,12 +8,12 @@
 
 [[main]]
   name = "Servicos"
-  pageRef = "servicos"
+  url = "/pt-br/servicos/"
   weight = 20
 
 [[main]]
   name = "Produtos"
-  pageRef = "produtos"
+  url = "/pt-br/produtos/"
   weight = 25
 
 [[main]]
