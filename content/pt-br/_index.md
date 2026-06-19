@@ -3,7 +3,7 @@ title: "Solucoes em Cloud Computing"
 description: "Transforme a performance e a segurança do seu ambiente com nossas solucoes!"
 summary: "Transforme a performance e a segurança do seu ambiente com nossas solucoes!"
 ---
-{{< figure src="img/logo.svg" alt="EF-TECH" width="240" >}}
+{{< figure src="img/logo.png" alt="EF-TECH" width="240" >}}
 
 ## Solucoes em Cloud Computing
 

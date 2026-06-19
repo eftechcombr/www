@@ -9,13 +9,13 @@ title = "EF-TECH"
   isoCode = "pt-br"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/logo.svg"
+  logo = "img/logo.png"
   description = "Soluções em cloud computing"
   copyright = "EF-TECH"
 
   [params.author]
     name = "EF-TECH"
-    image = "img/logo.svg"
+    image = "img/logo.png"
     imageQuality = 96
     headline = "Soluções em cloud computing"
     bio = "Transforme a performance e a segurança do seu ambiente com nossas soluções!"
