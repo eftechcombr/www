@@ -18,17 +18,17 @@
 
 [[main]]
   name = "About"
-  pageRef = "sobre"
+  url = "/en/sobre/"
   weight = 30
 
 [[main]]
   name = "Blog"
-  pageRef = "blog"
+  url = "/en/blog/"
   weight = 40
 
 [[main]]
   name = "Contact"
-  pageRef = "contato"
+  url = "/en/contato/"
   weight = 50
 
 # External links in header
