@@ -63,3 +63,66 @@ Local server: `http://localhost:1313/`
 6. Explore `content/pt-br/` to understand content organisation
 7. Review `.github/workflows/` for CI/CD pipeline
 8. Check the [Blowfish docs](https://blowfish.page/docs/) for theme customisation options
+
+## Adding Images to Blog Posts
+
+As imagens dos posts do blog devem ser salvas em `static/img/blog/<slug-do-post>/`. O slug do post e definido no front matter ou derivado do nome do arquivo.
+
+### Imagem de destaque (thumbnail/featured)
+
+Para definir uma imagem de destaque que aparece na listagem de posts e como hero no topo do artigo, use o parametro `featureimage` no front matter. O caminho e relativo ao diretorio `static/`:
+
+```toml
+featureimage = "img/blog/como-instalar-hugo/featured.jpg"
+```
+
+### Legenda da imagem hero
+
+O parametro `featureimagecaption` exibe uma legenda sobreposta a imagem hero:
+
+```toml
+featureimagecaption = "Foto por John Doe / Unsplash"
+```
+
+### Imagens inline no corpo do artigo
+
+Use a sintaxe padrao Markdown para inserir imagens no meio do texto. O Blowfish processa automaticamente as imagens, aplicando estilos responsivos e lazy loading:
+
+```markdown
+![Descricao da imagem](/img/blog/como-instalar-hugo/diagrama.png "Legenda opcional")
+```
+
+O texto entre aspas no final e opcional e aparece como legenda/tooltip.
+
+### Hero image global
+
+O hero (imagem destacada no topo do post) esta habilitado globalmente nas configuracoes do tema (`config/_default/params.toml`):
+
+```toml
+showHero = true
+heroStyle = "basic"
+```
+
+Isso significa que todo post com `featureimage` definido exibe automaticamente uma imagem hero no topo. E possivel desabilitar por post com `showHero = false` no front matter.
+
+### Fallback quando nao ha imagem de destaque
+
+O parametro `defaultFeaturedImage` no arquivo de configuracoes do tema define uma imagem padrao usada quando o post nao possui `featureimage`. Exemplo em `config/_default/params.toml`:
+
+```toml
+defaultFeaturedImage = "img/default-featured.jpg"
+```
+
+### Exemplo completo de front matter
+
+```toml
+---
+title: "Como Instalar o Hugo no macOS"
+date: 2026-06-20
+slug: "como-instalar-hugo"
+featureimage: "img/blog/como-instalar-hugo/featured.jpg"
+featureimagecaption: "Foto por Maria Silva / Unsplash"
+showHero: true
+tags: ["hugo", "tutorial", "macos"]
+---
+```

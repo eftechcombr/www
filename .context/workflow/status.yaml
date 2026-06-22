@@ -1,43 +1,41 @@
 project:
-  name: "Oracle Always Free Post"
-  scale: SMALL
-  started: "2026-06-19T22:04:55.236Z"
+  name: "blog-image-support"
+  scale: MEDIUM
+  started: "2026-06-22T12:48:51.374Z"
   current_phase: V
 
 phases:
   P:
     status: completed
-    started_at: "2026-06-19T22:04:55.236Z"
-    completed_at: "2026-06-19T22:05:15.052Z"
+    started_at: "2026-06-22T12:48:51.374Z"
+    completed_at: "2026-06-22T12:49:27.759Z"
   R:
-    status: skipped
-    reason: "Not required for scale SMALL"
+    status: completed
+    started_at: "2026-06-22T12:49:27.760Z"
+    completed_at: "2026-06-22T12:51:32.159Z"
   E:
-    status: filled
-    started_at: "2026-06-19T22:05:15.053Z"
-    completed_at: "2026-06-19T22:05:56.173Z"
+    status: completed
+    started_at: "2026-06-22T12:51:32.159Z"
+    completed_at: "2026-06-22T12:52:40.162Z"
   V:
     status: completed
-    started_at: "2026-06-19T22:05:56.174Z"
-    completed_at: "2026-06-19T22:05:59.458Z"
-    outputs:
-      - path: "content/pt-br/blog/oracle-always-free.md"
-        status: filled
-      - path: "content/en/blog/oracle-always-free.md"
-        status: filled
+    started_at: "2026-06-22T12:52:40.163Z"
+    completed_at: "2026-06-22T12:52:42.676Z"
   C:
     status: skipped
-    reason: "Not required for scale SMALL"
+    reason: "Not required for scale MEDIUM"
 
 execution:
   history:
-    - timestamp: "2026-06-19T22:05:59.458Z"
+    - timestamp: "2026-06-22T12:52:42.676Z"
       phase: V
       action: completed
-  last_activity: "2026-06-19T22:05:59.458Z"
+  last_activity: "2026-06-22T12:52:42.676Z"
   resume_context: "Fase V (Validação) concluída"
 
 approval:
   plan_created: true
-  plan_approved: false
+  plan_approved: true
+  approved_by: "solo-dev"
+  approved_at: "2026-06-22T12:51:29.780Z"
 

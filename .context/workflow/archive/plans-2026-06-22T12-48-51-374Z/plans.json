@@ -1,0 +1,14 @@
+{
+  "active": [
+    {
+      "slug": "oracle-always-free-post",
+      "path": "plans/oracle-always-free-post.md",
+      "title": "Oracle Always Free Tier Blog Post",
+      "summary": "Create a comprehensive Portuguese blog post about Oracle Cloud Always Free Tier resources with detailed breakdown of compute, storage, database, and networking offerings",
+      "linkedAt": "2026-06-19T22:05:12.800Z",
+      "status": "active"
+    }
+  ],
+  "completed": [],
+  "primary": "oracle-always-free-post"
+}

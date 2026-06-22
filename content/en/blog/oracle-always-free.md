@@ -6,6 +6,8 @@ date: 2026-06-19
 draft: false
 tags: ["oracle", "oci", "cloud-computing", "infrastructure"]
 categories: ["cloud-computing"]
+featureimage: "img/blog/oracle-always-free/featured.svg"
+featureimagecaption: "Photo by [Oracle](https://www.oracle.com/cloud/free/)"
 ---
 
 Oracle Cloud Infrastructure (OCI) provides one of the most generous **Always Free** programs among major cloud providers. Unlike trials that expire after 30 or 90 days, Always Free resources are available **for the lifetime of your account** in your tenancy's home region.

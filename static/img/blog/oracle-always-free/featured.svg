@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f80000"/>
+      <stop offset="100%" style="stop-color:#e05050"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.04)"/>
+    </linearGradient>
+    <linearGradient id="free-badge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894"/>
+      <stop offset="100%" style="stop-color:#00cec9"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.03" stroke="white" stroke-width="0.5">
+    <line x1="0" y1="0" x2="0" y2="630"/>
+    <line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+    <line x1="0" y1="0" x2="1200" y2="0"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+
+  <!-- Oracle logo red accent -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accent)"/>
+
+  <!-- Cloud icons -->
+  <g opacity="0.15" fill="none" stroke="#e05050" stroke-width="1.5">
+    <!-- Top-right decorative clouds -->
+    <ellipse cx="1050" cy="80" rx="60" ry="25"/>
+    <ellipse cx="1090" cy="70" rx="40" ry="18"/>
+    <ellipse cx="1010" cy="75" rx="35" ry="15"/>
+    <ellipse cx="1130" cy="78" rx="30" ry="12"/>
+
+    <!-- Bottom decorative clouds -->
+    <ellipse cx="100" cy="550" rx="50" ry="20"/>
+    <ellipse cx="140" cy="542" rx="35" ry="15"/>
+    <ellipse cx="60" cy="545" rx="30" ry="12"/>
+  </g>
+
+  <!-- Main content -->
+  <g transform="translate(80, 60)">
+
+    <!-- Oracle Cloud logo text -->
+    <text x="0" y="40" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#e05050" letter-spacing="4">ORACLE CLOUD</text>
+
+    <!-- Title -->
+    <text x="0" y="100" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" fill="white" letter-spacing="1">Always Free</text>
+    <text x="0" y="155" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#a0a0b8" letter-spacing="0.5">Recursos gratuitos para sempre</text>
+
+    <!-- Divider -->
+    <rect x="0" y="180" width="80" height="4" rx="2" fill="url(#accent)"/>
+
+    <!-- Description -->
+    <text x="0" y="220" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#8890a8">
+      <tspan x="0" dy="0">Compute, banco de dados, armazenamento e rede</tspan>
+      <tspan x="0" dy="24">— tudo sem custo por tempo ilimitado.</tspan>
+    </text>
+  </g>
+
+  <!-- Icons bar -->
+  <g transform="translate(80, 340)">
+    <rect x="0" y="0" width="1040" height="200" rx="16" fill="url(#card)" stroke="rgba(255,255,255,0.06)" stroke-width="1" filter="url(#shadow)"/>
+
+    <!-- Row 1 of service icons (4 items) -->
+    <!-- Compute -->
+    <g transform="translate(40, 30)">
+      <rect x="0" y="0" width="200" height="140" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <g transform="translate(20, 20)">
+        <rect x="0" y="0" width="32" height="32" rx="6" fill="#e05050" opacity="0.2"/>
+        <text x="8" y="22" font-family="Arial" font-size="16" fill="#e05050">☰</text>
+        <text x="0" y="60" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="white">Compute</text>
+        <text x="0" y="82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#788098">2 instâncias AMD + ARM</text>
+        <text x="0" y="100" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#788098">Até 12 GB de RAM</text>
+      </g>
+    </g>
+
+    <!-- Database -->
+    <g transform="translate(280, 30)">
+      <rect x="0" y="0" width="200" height="140" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <g transform="translate(20, 20)">
+        <circle cx="16" cy="16" r="16" fill="#00b894" opacity="0.2"/>
+        <text x="8" y="22" font-family="Arial" font-size="16" fill="#00b894">⛁</text>
+        <text x="0" y="60" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="white">Banco de Dados</text>
+        <text x="0" y="82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#788098">Autonomous AI DB</text>
+        <text x="0" y="100" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#788098">MySQL, NoSQL</text>
+      </g>
+    </g>
+
+    <!-- Storage -->
+    <g transform="translate(520, 30)">
+      <rect x="0" y="0" width="200" height="140" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <g transform="translate(20, 20)">
+        <rect x="0" y="0" width="32" height="32" rx="6" fill="#6c5ce7" opacity="0.2"/>
+        <text x="8" y="22" font-family="Arial" font-size="16" fill="#6c5ce7">☲</text>
+        <text x="0" y="60" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="white">Armazenamento</text>
+        <text x="0" y="82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#788098">200 GB Block Volume</text>
+        <text x="0" y="100" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#788098">20 GB Object Storage</text>
+      </g>
+    </g>
+
+    <!-- Network -->
+    <g transform="translate(760, 30)">
+      <rect x="0" y="0" width="200" height="140" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <g transform="translate(20, 20)">
+        <circle cx="16" cy="16" r="16" fill="#fdcb6e" opacity="0.2"/>
+        <text x="8" y="22" font-family="Arial" font-size="16" fill="#fdcb6e">◎</text>
+        <text x="0" y="60" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="white">Rede</text>
+        <text x="0" y="82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#788098">Load Balancer + VPN</text>
+        <text x="0" y="100" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#788098">10 TB/mês de saída</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Free badge -->
+  <g transform="translate(1045, 90)">
+    <rect x="-65" y="-20" width="130" height="40" rx="20" fill="url(#free-badge)" opacity="0.95"/>
+    <text x="0" y="5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="white" text-anchor="middle" letter-spacing="2">GRATUITO</text>
+  </g>
+
+  <!-- Bottom bar with EF-TECH -->
+  <line x1="80" y1="590" x2="1120" y2="590" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="80" y="615" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#505068">EF-TECH.COM.BR</text>
+</svg>

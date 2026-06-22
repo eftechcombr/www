@@ -1,14 +1,14 @@
 {
   "active": [
     {
-      "slug": "oracle-always-free-post",
-      "path": "plans/oracle-always-free-post.md",
-      "title": "Oracle Always Free Tier Blog Post",
-      "summary": "Create a comprehensive Portuguese blog post about Oracle Cloud Always Free Tier resources with detailed breakdown of compute, storage, database, and networking offerings",
-      "linkedAt": "2026-06-19T22:05:12.800Z",
+      "slug": "blog-image-support",
+      "path": "plans/blog-image-support.md",
+      "title": "Suporte a imagens nos posts do blog",
+      "summary": "Adicionar suporte completo a imagens nos posts do blog usando o tema Blowfish: featured images, hero images, imagens inline com processamento responsivo, e estrutura de diretórios padronizada",
+      "linkedAt": "2026-06-22T12:49:24.975Z",
       "status": "active"
     }
   ],
   "completed": [],
-  "primary": "oracle-always-free-post"
+  "primary": "blog-image-support"
 }

@@ -1,0 +1,43 @@
+project:
+  name: "Oracle Always Free Post"
+  scale: SMALL
+  started: "2026-06-19T22:04:55.236Z"
+  current_phase: V
+
+phases:
+  P:
+    status: completed
+    started_at: "2026-06-19T22:04:55.236Z"
+    completed_at: "2026-06-19T22:05:15.052Z"
+  R:
+    status: skipped
+    reason: "Not required for scale SMALL"
+  E:
+    status: filled
+    started_at: "2026-06-19T22:05:15.053Z"
+    completed_at: "2026-06-19T22:05:56.173Z"
+  V:
+    status: completed
+    started_at: "2026-06-19T22:05:56.174Z"
+    completed_at: "2026-06-19T22:05:59.458Z"
+    outputs:
+      - path: "content/pt-br/blog/oracle-always-free.md"
+        status: filled
+      - path: "content/en/blog/oracle-always-free.md"
+        status: filled
+  C:
+    status: skipped
+    reason: "Not required for scale SMALL"
+
+execution:
+  history:
+    - timestamp: "2026-06-19T22:05:59.458Z"
+      phase: V
+      action: completed
+  last_activity: "2026-06-19T22:05:59.458Z"
+  resume_context: "Fase V (Validação) concluída"
+
+approval:
+  plan_created: true
+  plan_approved: false
+

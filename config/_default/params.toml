@@ -26,7 +26,7 @@ disableTextInHeader = false
 # backgroundImageWidth = 1200
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
-# defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
+defaultFeaturedImage = "img/logo.png" # used as default for featured images in all articles
 # defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
 # Thumbnail aspect ratio as a number (e.g., "1.5", "1.0", "1.777")
@@ -75,8 +75,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showDateUpdated = false
   showAuthor = true
   # showAuthorBottom = false
-  showHero = false
-  # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
