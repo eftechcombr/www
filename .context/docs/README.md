@@ -39,5 +39,6 @@ Welcome to the repository knowledge base. Start with the project overview, then 
 | Tooling & Productivity Guide | `tooling.md` | CLI scripts, IDE configs, automation workflows |
 
 ## Recent Blog Posts
+- [Understanding Site Reliability Engineering: Google's SRE Philosophy and Practices](../../content/en/blog/understanding-sre-google-sre-philosophy-practices.md) (en) — Deep dive into Google SRE principles: error budgets, progressive rollouts, and the engineering-first culture
 - [Supabase agora é um app oficial do ChatGPT](../../content/pt-br/blog/supabase-chatgpt-app.md) (pt-br) — Supabase becomes official ChatGPT app with 29 integrated tools
 - [Supabase Is Now an Official ChatGPT App](../../content/en/blog/supabase-chatgpt-app.md) (en) — English version of the same announcement
