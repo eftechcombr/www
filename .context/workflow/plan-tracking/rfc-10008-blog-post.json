@@ -1,0 +1,32 @@
+{
+  "planSlug": "rfc-10008-blog-post",
+  "progress": 100,
+  "phases": {
+    "phase-2": {
+      "phaseId": "phase-2",
+      "status": "completed",
+      "startedAt": "2026-07-09T23:07:32.227Z",
+      "steps": [
+        {
+          "stepIndex": 1,
+          "description": "Step 1",
+          "status": "completed",
+          "completedAt": "2026-07-09T23:07:32.227Z",
+          "output": "content/en/blog/rfc-10008-http-query.md",
+          "notes": "Successfully authored the English blog post with Hugo front matter, examples, and technical insights from the RFC."
+        },
+        {
+          "stepIndex": 2,
+          "description": "Step 2",
+          "status": "completed",
+          "completedAt": "2026-07-09T23:07:35.440Z",
+          "output": "content/pt-br/blog/rfc-10008-http-query.md",
+          "notes": "Successfully authored the Portuguese version, keeping the exact structure, examples, and tone."
+        }
+      ],
+      "completedAt": "2026-07-09T23:07:35.440Z"
+    }
+  },
+  "decisions": [],
+  "lastUpdated": "2026-07-09T23:07:35.440Z"
+}
