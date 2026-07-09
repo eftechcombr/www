@@ -2,6 +2,12 @@
 
 Welcome to the repository knowledge base. Start with the project overview, then dive into specific guides as needed.
 
+**Blog Posts Reference**
+
+The following blog posts have been added to the documentation index:
+- [Google SRE Principles: Evolution from Traditional Operations to Site Reliability Engineering](../../content/en/blog/google-sre-principles.md) (en) — Comprehensive overview of Google SRE principles from the SRE Book
+- [Princípios SRE do Google: Evolução da Operações Tradicionais para a Engenharia de Confiabilidade de Sites](../../content/pt-br/blog/google-sre-principles.md) (pt-br) — Visão geral abrangente dos princípios SRE do Google, do Livro SRE
+
 ## Core Guides
 - [Project Overview](./project-overview.md)
 - [Architecture Notes](./architecture.md)
@@ -42,3 +48,5 @@ Welcome to the repository knowledge base. Start with the project overview, then 
 - [Understanding Site Reliability Engineering: Google's SRE Philosophy and Practices](../../content/en/blog/understanding-sre-google-sre-philosophy-practices.md) (en) — Deep dive into Google SRE principles: error budgets, progressive rollouts, and the engineering-first culture
 - [Supabase agora é um app oficial do ChatGPT](../../content/pt-br/blog/supabase-chatgpt-app.md) (pt-br) — Supabase becomes official ChatGPT app with 29 integrated tools
 - [Supabase Is Now an Official ChatGPT App](../../content/en/blog/supabase-chatgpt-app.md) (en) — English version of the same announcement
+- [Google SRE Principles: Evolution from Traditional Operations to Site Reliability Engineering](./../../content/en/blog/google-sre-principles.md) (en) — Comprehensive overview of Google SRE principles from the SRE Book
+- [Princípios SRE do Google: Evolução da Operações Tradicionais para a Engenharia de Confiabilidade de Sites](./../../content/pt-br/blog/google-sre-principles.md) (pt-br) — Visão geral abrangente dos princípios SRE do Google, do Livro SRE
