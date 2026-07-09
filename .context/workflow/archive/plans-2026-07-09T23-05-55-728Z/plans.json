@@ -1,0 +1,14 @@
+{
+  "active": [
+    {
+      "slug": "blog-image-support",
+      "path": "plans/blog-image-support.md",
+      "title": "Suporte a imagens nos posts do blog",
+      "summary": "Adicionar suporte completo a imagens nos posts do blog usando o tema Blowfish: featured images, hero images, imagens inline com processamento responsivo, e estrutura de diretórios padronizada",
+      "linkedAt": "2026-06-22T12:49:24.975Z",
+      "status": "active"
+    }
+  ],
+  "completed": [],
+  "primary": "blog-image-support"
+}

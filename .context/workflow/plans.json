@@ -1,14 +1,14 @@
 {
   "active": [
     {
-      "slug": "blog-image-support",
-      "path": "plans/blog-image-support.md",
-      "title": "Suporte a imagens nos posts do blog",
-      "summary": "Adicionar suporte completo a imagens nos posts do blog usando o tema Blowfish: featured images, hero images, imagens inline com processamento responsivo, e estrutura de diretórios padronizada",
-      "linkedAt": "2026-06-22T12:49:24.975Z",
+      "slug": "rfc-10008-blog-post",
+      "path": "plans/rfc-10008-blog-post.md",
+      "title": "Create HTTP QUERY Method Blog Post",
+      "summary": "Write a blog post in English and Portuguese about RFC 10008 (The HTTP QUERY Method), create a PR, verify build, and merge.",
+      "linkedAt": "2026-07-09T23:06:26.908Z",
       "status": "active"
     }
   ],
   "completed": [],
-  "primary": "blog-image-support"
+  "primary": "rfc-10008-blog-post"
 }
