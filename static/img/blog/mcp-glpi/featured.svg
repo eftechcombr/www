@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <!-- Definitions for gradients and effects -->
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glowing Effects -->
+    <filter id="glowPurple" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glowCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glowOrange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Node Gradients -->
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="mcpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+    <linearGradient id="glpiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  <rect width="800" height="450" fill="url(#grid)" />
+
+  <!-- Ambient Light glows in background -->
+  <circle cx="150" cy="225" r="130" fill="#4f46e5" opacity="0.15" filter="url(#glowPurple)" />
+  <circle cx="400" cy="225" r="100" fill="#0891b2" opacity="0.12" filter="url(#glowCyan)" />
+  <circle cx="650" cy="225" r="130" fill="#ea580c" opacity="0.15" filter="url(#glowOrange)" />
+
+  <!-- Connecting Lines / Pipes -->
+  <!-- Left to Center -->
+  <path d="M 210 225 Q 305 160 400 225" fill="none" stroke="#6366f1" stroke-width="3" stroke-dasharray="8,8" opacity="0.8" />
+  <path d="M 210 225 Q 305 290 400 225" fill="none" stroke="#0ea5e9" stroke-width="3" opacity="0.5" />
+  
+  <!-- Center to Right -->
+  <path d="M 400 225 Q 525 160 590 225" fill="none" stroke="#0ea5e9" stroke-width="3" opacity="0.5" />
+  <path d="M 400 225 Q 525 290 590 225" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="8,8" opacity="0.8" />
+
+  <!-- Data Flow Particles -->
+  <circle cx="280" cy="192" r="4" fill="#a855f7" filter="url(#glowPurple)" />
+  <circle cx="330" cy="244" r="4" fill="#06b6d4" filter="url(#glowCyan)" />
+  <circle cx="480" cy="244" r="4" fill="#0ea5e9" filter="url(#glowCyan)" />
+  <circle cx="530" cy="192" r="4" fill="#f59e0b" filter="url(#glowOrange)" />
+
+  <!-- LEFT NODE: AI Assistants -->
+  <g transform="translate(150, 225)">
+    <!-- Outer Ring -->
+    <circle r="60" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="5,5" opacity="0.6" />
+    <circle r="50" fill="#1e1b4b" stroke="url(#aiGrad)" stroke-width="3" filter="url(#glowPurple)" />
+    
+    <!-- AI Sparkle Icon -->
+    <path d="M -15,-5 C -15,-5 -5,-5 0,-15 C 5,-5 15,-5 15,-5 C 15,-5 5,-5 0,10 C -5,-5 -15,-5 -15,-5 Z" fill="#ffffff" transform="scale(1.3)" />
+    <circle cx="-12" cy="-12" r="3" fill="#c084fc" />
+    <circle cx="14" cy="12" r="2.5" fill="#818cf8" />
+    <circle cx="10" cy="-14" r="2" fill="#e9d5ff" />
+    
+    <!-- Label -->
+    <text x="0" y="85" text-anchor="middle" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">Assistentes de IA</text>
+    <text x="0" y="103" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Claude, VS Code, Cline</text>
+  </g>
+
+  <!-- MIDDLE NODE: MCP Server -->
+  <g transform="translate(400, 225)">
+    <!-- Outer Ring -->
+    <circle r="48" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="10,4" opacity="0.6" />
+    <!-- Hexagon Outer -->
+    <polygon points="0,-40 34.6,-20 34.6,20 0,40 -34.6,20 -34.6,-20" fill="#0f172a" stroke="url(#mcpGrad)" stroke-width="3" filter="url(#glowCyan)" />
+    
+    <!-- MCP Logo styling (Bridge / Plug / Link) -->
+    <path d="M-15,-8 L-8,-8 L-8,-15 L8,-15 L8,-8 L15,-8 L15,8 L8,8 L8,15 L-8,15 L-8,8 L-15,8 Z" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" />
+    <rect x="-4" y="-4" width="8" height="8" rx="1.5" fill="#22d3ee" />
+    
+    <!-- Label -->
+    <text x="0" y="65" text-anchor="middle" fill="#22d3ee" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" letter-spacing="2">MCP</text>
+    <text x="0" y="85" text-anchor="middle" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">mcp-glpi</text>
+    <text x="0" y="103" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Servidor de Contexto</text>
+  </g>
+
+  <!-- RIGHT NODE: GLPI -->
+  <g transform="translate(650, 225)">
+    <!-- Outer Ring -->
+    <circle r="60" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5,5" opacity="0.6" />
+    <circle r="50" fill="#1c1917" stroke="url(#glpiGrad)" stroke-width="3" filter="url(#glowOrange)" />
+    
+    <!-- GLPI Logo/Ticketing Icon -->
+    <rect x="-18" y="-18" width="36" height="36" rx="4" fill="none" stroke="#ffffff" stroke-width="3" />
+    <line x1="-12" y1="-8" x2="12" y2="-8" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="-12" y1="0" x2="6" y2="0" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="-12" y1="8" x2="-2" y2="8" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+    
+    <!-- Cog/Check icon representing processing/ITSM -->
+    <circle cx="10" cy="8" r="5" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+    <path d="M 8 8 L 9.5 9.5 L 12.5 6.5" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Label -->
+    <text x="0" y="85" text-anchor="middle" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">GLPI ITSM</text>
+    <text x="0" y="103" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Tickets, Ativos e API</text>
+  </g>
+
+  <!-- Title/Header in SVG -->
+  <text x="400" y="55" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" letter-spacing="1">EF-TECH • INTEGRAÇÃO INTELIGENTE</text>
+  
+  <!-- Flow Arrows or Badges at bottom -->
+  <rect x="330" y="375" width="140" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+  <text x="400" y="394" text-anchor="middle" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">OPEN SOURCE</text>
+</svg>
