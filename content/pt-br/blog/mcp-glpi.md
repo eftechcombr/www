@@ -6,13 +6,13 @@ date: 2026-07-10
 draft: false
 tags: ["glpi", "mcp", "ia", "model-context-protocol", "open-source", "typescript"]
 categories: ["infraestrutura"]
-featureimage: "img/blog/mcp-glpi/featured.svg"
+featureimage: "/img/blog/mcp-glpi/featured.svg"
 featureimagecaption: "Diagrama conceitual do MCP-GLPI integrando assistentes de IA ao GLPI"
 ---
 
 A EF-TECH tem o prazer de anunciar o **mcp-glpi**, um servidor open-source que implementa o [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) para expor todo o ecossistema GLPI a assistentes de IA como Claude, Cline, GitHub Copilot e qualquer outro cliente compatível com MCP.
 
-![MCP-GLPI: integração entre IA e GLPI](img/blog/mcp-glpi/featured.svg)
+![MCP-GLPI: integração entre IA e GLPI](/img/blog/mcp-glpi/featured.svg)
 
 ## O que é o MCP-GLPI?
 
