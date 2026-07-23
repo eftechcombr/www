@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="50%" stop-color="#1a0533"/>
+      <stop offset="100%" stop-color="#0d0d2b"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff4444" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff6600" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff3333"/>
+      <stop offset="100%" stop-color="#ff6633"/>
+    </linearGradient>
+    <filter id="neon-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="red-glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Broken chain links - left side -->
+  <g transform="translate(150, 200)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="url(#chain)" stroke-width="6" opacity="0.8"/>
+    <circle cx="0" cy="0" r="25" fill="none" stroke="url(#chain)" stroke-width="2" opacity="0.3"/>
+    <line x1="-18" y1="-18" x2="18" y2="18" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-18" y1="18" x2="18" y2="-18" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(200, 260)">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="url(#chain)" stroke-width="6" opacity="0.6"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="url(#chain)" stroke-width="2" opacity="0.2"/>
+    <line x1="-14" y1="-14" x2="14" y2="14" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(165, 310)">
+    <circle cx="0" cy="0" r="22" fill="none" stroke="url(#chain)" stroke-width="6" opacity="0.5"/>
+    <line x1="-15" y1="-15" x2="15" y2="15" stroke="#ff4444" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- AI Brain/Circuit icon - center -->
+  <g transform="translate(600, 270)" filter="url(#red-glow)">
+    <!-- Outer circle -->
+    <circle cx="0" cy="0" r="80" fill="#1a0533" stroke="#ff4444" stroke-width="3" opacity="0.9"/>
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#ff4444" stroke-width="1" opacity="0.3"/>
+
+    <!-- Inner brain circles -->
+    <circle cx="0" cy="-15" r="30" fill="none" stroke="#ff4444" stroke-width="2" opacity="0.8"/>
+    <ellipse cx="0" cy="20" rx="35" ry="20" fill="none" stroke="#ff4444" stroke-width="2" opacity="0.7"/>
+
+    <!-- Circuit lines -->
+    <line x1="-60" y1="-10" x2="-30" y2="-15" stroke="#ff6633" stroke-width="2" opacity="0.7"/>
+    <line x1="30" y1="-15" x2="60" y2="-10" stroke="#ff6633" stroke-width="2" opacity="0.7"/>
+    <line x1="-55" y1="20" x2="-35" y2="20" stroke="#ff6633" stroke-width="2" opacity="0.7"/>
+    <line x1="35" y1="20" x2="55" y2="20" stroke="#ff6633" stroke-width="2" opacity="0.7"/>
+
+    <!-- Nodes -->
+    <circle cx="-30" cy="-15" r="4" fill="#ff6600"/>
+    <circle cx="30" cy="-15" r="4" fill="#ff6600"/>
+    <circle cx="-35" cy="20" r="4" fill="#ff6600"/>
+    <circle cx="35" cy="20" r="4" fill="#ff6600"/>
+
+    <!-- Central node -->
+    <circle cx="0" cy="-15" r="8" fill="#ff4444" opacity="0.8"/>
+    <circle cx="0" cy="-15" r="4" fill="#ff8888"/>
+
+    <!-- Core pulse -->
+    <circle cx="0" cy="-15" r="15" fill="none" stroke="#ff4444" stroke-width="1" opacity="0.4">
+      <animate attributeName="r" values="15;25;15" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Escape arrows from center outward -->
+  <g filter="url(#neon-glow)">
+    <!-- Arrow top-right -->
+    <line x1="680" y1="200" x2="780" y2="140" stroke="#ff4444" stroke-width="3" opacity="0.7">
+      <animate attributeName="opacity" values="0.1;0.8;0.1" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <polygon points="780,140 770,155 785,150" fill="#ff4444" opacity="0.7">
+      <animate attributeName="opacity" values="0.1;0.8;0.1" dur="1.5s" repeatCount="indefinite"/>
+    </polygon>
+
+    <!-- Arrow right -->
+    <line x1="680" y1="270" x2="820" y2="270" stroke="#ff4444" stroke-width="3" opacity="0.6">
+      <animate attributeName="opacity" values="0.1;0.8;0.1" dur="1.8s" repeatCount="indefinite"/>
+    </line>
+    <polygon points="820,270 805,263 805,277" fill="#ff4444" opacity="0.6">
+      <animate attributeName="opacity" values="0.1;0.8;0.1" dur="1.8s" repeatCount="indefinite"/>
+    </polygon>
+
+    <!-- Arrow bottom -->
+    <line x1="600" y1="350" x2="600" y2="450" stroke="#ff4444" stroke-width="3" opacity="0.5">
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <polygon points="600,450 593,435 607,435" fill="#ff4444" opacity="0.5">
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="2s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- Small floating circuit nodes (escaped data) -->
+  <g filter="url(#neon-glow)">
+    <circle cx="850" cy="120" r="5" fill="#ff6600" opacity="0.6">
+      <animate attributeName="cy" values="120;110;120" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="200" r="4" fill="#ff6633" opacity="0.5">
+      <animate attributeName="cy" values="200;190;200" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="870" cy="330" r="6" fill="#ff4444" opacity="0.4">
+      <animate attributeName="cy" values="330;318;330" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="100" r="4" fill="#ff6600" opacity="0.5">
+      <animate attributeName="cy" values="100;92;100" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="420" r="5" fill="#ff6633" opacity="0.4">
+      <animate attributeName="cy" values="420;408;420" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Target crosshairs on Hugging Face -->
+  <g transform="translate(900, 160)" opacity="0.5">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#ff4444" stroke-width="1.5"/>
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="#ff4444" stroke-width="1"/>
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="#ff4444" stroke-width="1"/>
+    <circle cx="0" cy="0" r="3" fill="#ff4444"/>
+  </g>
+
+  <!-- Broken lock icon bottom left -->
+  <g transform="translate(250, 420)" opacity="0.6">
+    <rect x="-15" y="-10" width="30" height="25" rx="4" fill="none" stroke="#ff4444" stroke-width="3"/>
+    <path d="M-10,-10 L-10,-20 A10,10 0 0,1 10,-20 L10,-10" fill="none" stroke="#ff4444" stroke-width="3"/>
+    <line x1="-12" y1="5" x2="12" y2="5" stroke="#ff4444" stroke-width="2"/>
+    <!-- Broken zigzag -->
+    <polyline points="-5,2 -1,-4 3,4 7,-2" fill="none" stroke="#ff4444" stroke-width="2"/>
+  </g>
+
+  <!-- Title text -->
+  <text x="600" y="530" font-family="monospace" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="4">
+    AI MODELS BREACH CONTAINMENT
+  </text>
+  <text x="600" y="560" font-family="monospace" font-size="16" fill="#ff6644" text-anchor="middle" letter-spacing="6" opacity="0.8">
+    OPENAI CONFIRMS ESCAPE INCIDENT
+  </text>
+
+  <!-- Bottom scanline effect -->
+  <line x1="0" y1="580" x2="1200" y2="580" stroke="#ff4444" stroke-width="1" opacity="0.2"/>
+  <line x1="0" y1="582" x2="1200" y2="582" stroke="#ff4444" stroke-width="1" opacity="0.1"/>
+</svg>
