@@ -6,13 +6,13 @@ date: 2026-07-29
 draft: false
 tags: ["ansible", "github-actions", "devops", "ci-cd", "automation", "iac"]
 categories: ["infrastructure"]
-featureimage: "img/blog/ansible-cli-github-action/cover.png"
+featureimage: "cover.png"
 featureimagecaption: "Ansible CLI GitHub Action — terminal interface preview"
 ---
 
 EF-TECH is proud to announce **ansible-cli-github-action**, a lightweight GitHub Action that brings the full power of Ansible CLI into your GitHub Actions workflows. Whether you need to run playbooks, manage Galaxy roles, or execute ad-hoc commands, this action has you covered.
 
-![Ansible CLI GitHub Action](img/blog/ansible-cli-github-action/cover.png)
+![Ansible CLI GitHub Action](cover.png)
 
 ## What Is It?
 
