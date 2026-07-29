@@ -6,7 +6,7 @@ date: 2026-06-19
 draft: false
 tags: ["oracle", "oci", "cloud-computing", "infraestrutura"]
 categories: ["cloud-computing"]
-featureimage: "img/blog/oracle-always-free/featured.svg"
+featureimage: "/img/blog/oracle-always-free/featured.svg"
 featureimagecaption: "Foto por [Oracle](https://www.oracle.com/cloud/free/)"
 ---
 
