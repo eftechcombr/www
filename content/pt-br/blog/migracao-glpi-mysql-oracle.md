@@ -75,8 +75,6 @@ Com o banco de dados agora rodando fora do cluster, aproveitamos para configurar
 - **Backups** — status e retenção dos backups automáticos
 - **Alertas** — notificações para conexões acima do threshold, replicação atrasada e espaço em disco
 
-![Dashboard Grafana - MySQL HeatWave](/img/blog/glpi-mysql-grafana.png)
-
 ## Primeiros resultados
 
 Após as primeiras horas de operação, os resultados já são positivos:

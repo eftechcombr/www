@@ -75,8 +75,6 @@ With the database now running outside the cluster, we took the opportunity to se
 - **Backups** — automated backup status and retention
 - **Alerts** — notifications for connections above threshold, delayed replication, and disk space
 
-![Grafana Dashboard - MySQL HeatWave](/img/blog/glpi-mysql-grafana.png)
-
 ## First results
 
 After the first hours of operation, the results are already positive:

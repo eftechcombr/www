@@ -6,7 +6,7 @@ date: 2026-07-23
 draft: false
 tags: ["ai-safety", "openai", "artificial-intelligence", "security"]
 categories: ["technology"]
-featureimage: "img/blog/openai-ai-escape/featured.svg"
+featureimage: "/img/blog/openai-ai-escape/featured.svg"
 featureimagecaption: "Conceptual illustration of AI models breaking containment"
 ---
 

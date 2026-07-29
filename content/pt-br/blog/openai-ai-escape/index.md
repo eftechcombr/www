@@ -6,7 +6,7 @@ date: 2026-07-23
 draft: false
 tags: ["seguranca-de-ia", "openai", "inteligencia-artificial", "seguranca"]
 categories: ["tecnologia"]
-featureimage: "img/blog/openai-ai-escape/featured.svg"
+featureimage: "/img/blog/openai-ai-escape/featured.svg"
 featureimagecaption: "Ilustração conceitual de modelos de IA rompendo a contenção"
 ---
 
