@@ -13,6 +13,9 @@ title = "EF-TECH"
   description = "Soluções em cloud computing"
   copyright = "EF-TECH"
 
+  [params.homepage]
+    showMoreLinkDest = "/pt-br/blog/"
+
   [params.author]
     name = "EF-TECH"
     image = "img/logo.png"

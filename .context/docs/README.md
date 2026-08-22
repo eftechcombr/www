@@ -5,6 +5,8 @@ Welcome to the repository knowledge base. Start with the project overview, then 
 **Blog Posts Reference**
 
 The following blog posts have been added to the documentation index:
+- [Understanding P99 and Tail Latency](../../content/en/blog/p99-tail-latency/index.md) (en) — Why the mean lies and how to eliminate tail latency bottlenecks in production
+- [P99 e Latência de Cauda (Tail Latency)](../../content/pt-br/blog/p99-tail-latency/index.md) (pt-br) — Por que a média engana e como mitigar gargalos de latência de cauda em produção
 - [Understanding RFC 10008: The HTTP QUERY Method](../../content/en/blog/rfc-10008-http-query.md) (en) — Standardizing HTTP QUERY as a safe and idempotent method with a body payload
 - [Entendendo a RFC 10008: O Método HTTP QUERY](../../content/pt-br/blog/rfc-10008-http-query.md) (pt-br) — Padronizando o método HTTP QUERY como uma alternativa segura e idempotente com payload no corpo
 - [Google SRE Principles: Evolution from Traditional Operations to Site Reliability Engineering](../../content/en/blog/google-sre-principles.md) (en) — Comprehensive overview of Google SRE principles from the SRE Book
@@ -47,6 +49,8 @@ The following blog posts have been added to the documentation index:
 | Tooling & Productivity Guide | `tooling.md` | CLI scripts, IDE configs, automation workflows |
 
 ## Recent Blog Posts
+- [Understanding P99 and Tail Latency](../../content/en/blog/p99-tail-latency/index.md) (en) — Why the mean lies and how to eliminate tail latency bottlenecks in production
+- [P99 e Latência de Cauda (Tail Latency)](../../content/pt-br/blog/p99-tail-latency/index.md) (pt-br) — Por que a média engana e como mitigar gargalos de latência de cauda em produção
 - [Understanding RFC 10008: The HTTP QUERY Method](../../content/en/blog/rfc-10008-http-query.md) (en) — Standardizing HTTP QUERY as a safe and idempotent method with a body payload
 - [Entendendo a RFC 10008: O Método HTTP QUERY](../../content/pt-br/blog/rfc-10008-http-query.md) (pt-br) — Padronizando o método HTTP QUERY como uma alternativa segura e idempotente com payload no corpo
 - [Understanding Site Reliability Engineering: Google's SRE Philosophy and Practices](../../content/en/blog/understanding-sre-google-sre-philosophy-practices.md) (en) — Deep dive into Google SRE principles: error budgets, progressive rollouts, and the engineering-first culture
