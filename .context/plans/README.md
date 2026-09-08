@@ -6,8 +6,9 @@ This directory contains plans for coordinating work across documentation and pla
 1. [Add Whatsapp Link](./add-whatsapp-link.md)
 2. [Blog Hermes K8s Install](./blog-hermes-k8s-install.md)
 3. [Blog Image Support](./blog-image-support.md)
-4. [Oracle Always Free Post](./oracle-always-free-post.md)
-5. [Rfc 10008 Blog Post](./rfc-10008-blog-post.md)
+4. [Glpi 12 0 0 Rc1 Announcement](./glpi-12-0-0-rc1-announcement.md)
+5. [Oracle Always Free Post](./oracle-always-free-post.md)
+6. [Rfc 10008 Blog Post](./rfc-10008-blog-post.md)
 
 ## How To Create Or Update Plans
 - Run "ai-context plan <name>" to scaffold a new plan template.

@@ -5,6 +5,8 @@ Welcome to the repository knowledge base. Start with the project overview, then 
 **Blog Posts Reference**
 
 The following blog posts have been added to the documentation index:
+- [GLPI 12.0.0-rc1 and Helm Chart 2.12.0: Subchart Modernization, Security Hardening, and High Availability](../../content/en/blog/glpi-12-0-0-rc1.md) (en) — EF-TECH release of GLPI 12.0.0-rc1 and Helm Chart 2.12.0 with Valkey subchart, PDB, HPA, S3 backup, and readOnlyRootFilesystem hardening
+- [GLPI 12.0.0-rc1 e Helm Chart 2.12.0: modernização de subcharts, hardening e alta disponibilidade](../../content/pt-br/blog/glpi-12-0-0-rc1.md) (pt-br) — Lançamento da EF-TECH do GLPI 12.0.0-rc1 e Helm Chart 2.12.0 com subchart Valkey, PDB, HPA, backup S3 e hardening com readOnlyRootFilesystem
 - [Understanding P99 and Tail Latency](../../content/en/blog/p99-tail-latency/index.md) (en) — Why the mean lies and how to eliminate tail latency bottlenecks in production
 - [P99 e Latência de Cauda (Tail Latency)](../../content/pt-br/blog/p99-tail-latency/index.md) (pt-br) — Por que a média engana e como mitigar gargalos de latência de cauda em produção
 - [Understanding RFC 10008: The HTTP QUERY Method](../../content/en/blog/rfc-10008-http-query.md) (en) — Standardizing HTTP QUERY as a safe and idempotent method with a body payload
