@@ -139,6 +139,7 @@ docker pull ghcr.io/eftechcombr/glpi:12.0.0-rc1
 
 ## Useful Links
 
+- [Official GLPI Project Repository](https://github.com/glpi-project/glpi)
 - [Official EF-TECH GLPI Repository on GitHub](https://github.com/eftechcombr/glpi)
 - [GLPI 12.0.0-rc1 Release Notes](https://github.com/eftechcombr/glpi/releases/tag/v12.0.0-rc1)
 - [Helm Chart 2.12.0 Release](https://github.com/eftechcombr/glpi/releases/tag/glpi-2.12.0)
