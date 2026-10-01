@@ -5,6 +5,8 @@ Welcome to the repository knowledge base. Start with the project overview, then 
 **Blog Posts Reference**
 
 The following blog posts have been added to the documentation index:
+- [GLPI 11.0.11: Security Release, Plugin Fixes, and New Features in eftechcombr/glpi](../../content/en/blog/glpi-11-0-11/index.md) (en) — EF-TECH release of GLPI 11.0.11 security release superseding 11.0.10, fixing 6 high vulnerabilities, custom Nginx config templates, and MySQL SSL support
+- [GLPI 11.0.11: Release de Segurança, Correção de Plugins e Novos Recursos no eftechcombr/glpi](../../content/pt-br/blog/glpi-11-0-11/index.md) (pt-br) — Lançamento da EF-TECH do GLPI 11.0.11 corrigindo 6 vulnerabilidades de alta severidade, substituindo 11.0.10, templates customizados de Nginx e suporte a SSL no MySQL
 - [GLPI 12.0.0-rc1 and Helm Chart 2.12.0: Subchart Modernization, Security Hardening, and High Availability](../../content/en/blog/glpi-12-0-0-rc1.md) (en) — EF-TECH release of GLPI 12.0.0-rc1 and Helm Chart 2.12.0 with Valkey subchart, PDB, HPA, S3 backup, and readOnlyRootFilesystem hardening
 - [GLPI 12.0.0-rc1 e Helm Chart 2.12.0: modernização de subcharts, hardening e alta disponibilidade](../../content/pt-br/blog/glpi-12-0-0-rc1.md) (pt-br) — Lançamento da EF-TECH do GLPI 12.0.0-rc1 e Helm Chart 2.12.0 com subchart Valkey, PDB, HPA, backup S3 e hardening com readOnlyRootFilesystem
 - [Understanding P99 and Tail Latency](../../content/en/blog/p99-tail-latency/index.md) (en) — Why the mean lies and how to eliminate tail latency bottlenecks in production
