@@ -28,5 +28,6 @@ This directory contains ready-to-customize playbooks for AI agents collaborating
 - [Documentation Index](../docs/README.md)
 - [Agent Knowledge Base](../../AGENTS.md)
 - [Contributor Guidelines](../../CONTRIBUTING.md)
+- [Release Blog Post (GLPI 12.0.0)](../../content/en/blog/glpi-12-0-0/index.md)
 - [Release Blog Post (GLPI 11.0.11)](../../content/en/blog/glpi-11-0-11/index.md)
 - [Release Blog Post (GLPI 12.0.0-rc1)](../../content/en/blog/glpi-12-0-0-rc1.md)
