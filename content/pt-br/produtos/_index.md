@@ -15,4 +15,8 @@ GLPI é um software livre de gestão de ativos de TI e service desk ITIL. A EF-T
 
 WireGuard é uma VPN corporativa moderna, containerizada e segura. A EF-TECH oferece deploy via Docker com Alpine Linux, health check automatizado e monitoramento pronto para produção.
 
+### [mcp-glpi](/pt-br/produtos/mcp-glpi/)
+
+mcp-glpi v3.4 conecta assistentes de IA compatíveis com MCP ao GLPI com 88 ferramentas para tickets, ITIL, ativos, busca multicritério, estatísticas e operações de service desk. A EF-TECH pode apoiar avaliação, implantação e operação.
+
 Pronto para começar? [Fale conosco](/pt-br/contato/) e agende uma consultoria.
