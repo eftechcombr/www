@@ -1,110 +1,138 @@
 ---
-title: "MCP-GLPI: integre assistentes de IA com o GLPI via Model Context Protocol"
-description: "Conheça o mcp-glpi, um servidor MCP que expõe todo o ecossistema GLPI — tickets, ativos, usuários, KB e muito mais — para assistentes de IA como Claude, Cline e VS Code."
-summary: "A EF-TECH lança o mcp-glpi, um servidor MCP (Model Context Protocol) que permite que assistentes de IA interajam diretamente com o GLPI via 84 ferramentas e 9 recursos, cobrindo tickets, ativos, problemas, mudanças, base de conhecimento, contratos e muito mais."
-date: 2026-07-10
+title: "mcp-glpi 3.4: conecte assistentes de IA ao GLPI com MCP"
+description: "Conheça o mcp-glpi 3.4, servidor MCP que conecta assistentes de IA ao GLPI com OAuth2, 88 ferramentas e transporte stdio ou Streamable HTTP."
+summary: "O mcp-glpi 3.4 oferece uma ponte estruturada entre clientes compatíveis com Model Context Protocol e o GLPI, cobrindo tickets, ITIL, ativos, estatísticas, busca multicritério e conexões multi-tenant."
+date: 2026-10-14
 draft: false
 tags: ["glpi", "mcp", "ia", "model-context-protocol", "open-source", "typescript"]
 categories: ["infraestrutura"]
-featureimage: "/img/blog/mcp-glpi/featured.svg"
-featureimagecaption: "Diagrama conceitual do MCP-GLPI integrando assistentes de IA ao GLPI"
+featureimage: "/img/blog/mcp-glpi/featured.png"
+featureimagecaption: "Diagrama conceitual da integração entre assistentes de IA, MCP e GLPI"
 ---
 
-A EF-TECH tem o prazer de anunciar o **mcp-glpi**, um servidor open-source que implementa o [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) para expor todo o ecossistema GLPI a assistentes de IA como Claude, Cline, GitHub Copilot e qualquer outro cliente compatível com MCP.
+Equipes de service desk e operações acumulam informações em tickets, ativos,
+problemas, mudanças e na base de conhecimento. Quando um assistente de IA não
+consegue consultar essas informações de forma estruturada, o trabalho acaba
+envolvendo cópia e colagem, consultas manuais e alternância entre ferramentas.
 
-![MCP-GLPI: integração entre IA e GLPI](/img/blog/mcp-glpi/featured.svg)
+O **mcp-glpi** resolve a conexão entre esses dois mundos. Ele é um servidor do
+[Model Context Protocol (MCP)](https://modelcontextprotocol.io/) que expõe o
+GLPI a clientes compatíveis, como Claude Desktop, Claude Code e Cline. Assim,
+o assistente pode utilizar as ferramentas disponibilizadas pelo servidor para
+consultar e operar dados do GLPI, respeitando os sinais de segurança definidos
+em cada ferramenta.
 
-## O que é o MCP-GLPI?
+## MCP em poucas palavras
 
-O MCP (Model Context Protocol) é um protocolo aberto padronizado pela Anthropic que permite que assistentes de IA se conectem a sistemas externos de forma segura e estruturada. O **mcp-glpi** é a ponte entre esse protocolo e o GLPI — o software livre de gestão de serviços de TI (ITSM) mais utilizado no Brasil.
+MCP é um protocolo para conectar assistentes de IA a sistemas externos por meio
+de ferramentas e recursos descritos de maneira padronizada. O cliente MCP se
+conecta ao servidor, descobre o que está disponível e pode solicitar uma ação
+ou consulta conforme a conversa.
 
-Com ele, você pode pedir em linguagem natural para um assistente de IA:
+No caso do mcp-glpi, o sistema externo é uma instância do GLPI. O servidor
+traduz as chamadas das ferramentas para a High-Level API v2.3 do GLPI, caminho
+mantido estável para compatibilidade com GLPI 11 e GLPI 12, conforme o README do
+projeto.
 
-- "Liste os tickets abertos de alta urgência"
-- "Crie um chamado informando que o servidor de banco está com 95% de uso de CPU"
-- "Mostre os dados do computador do João"
-- "Qual o total de ativos no inventário?"
-- "Adicione um acompanhamento no ticket #42 informando que o problema foi resolvido"
+## O que o mcp-glpi 3.4 oferece
 
-Tudo isso sem sair do seu assistente de IA favorito.
+### 88 ferramentas para o ecossistema GLPI
 
-## Principais funcionalidades
+A versão 3.4 reúne **88 ferramentas MCP** para tickets, problemas, mudanças,
+ativos, base de conhecimento, contratos, fornecedores, locais, projetos,
+usuários, grupos, categorias, entidades, documentos, pesquisa, estatísticas e
+gerenciamento da conexão.
 
-O servidor expõe **84 ferramentas MCP** e **9 recursos** organizados nas seguintes categorias:
+Também há recursos no formato `glpi://`, como tickets abertos e recentes,
+problemas abertos, mudanças pendentes, computadores, grupos, categorias e
+estatísticas de tickets e ativos.
 
-### Gestão de Tickets (ITIL completo)
+### Tickets e cobertura ITIL
 
-| Área | Ferramentas |
-|---|---|
-| Leitura | Listar, obter detalhes, timeline, acompanhamentos, tarefas, soluções, validações, documentos, satisfação, tickets em atraso (SLA) |
-| Escrita | Criar, atualizar, deletar, adicionar acompanhamento, adicionar tarefa com apontamento de horas, adicionar solução, atribuir ticket, vincular tickets, solicitar validação, aprovar/recusar validação, anexar documento |
+O conjunto de ferramentas de tickets cobre tanto leitura quanto operações do
+ciclo de atendimento:
 
-### Problemas e Mudanças
+- listagem, detalhes e busca de tickets;
+- timeline cronológica com acompanhamentos, tarefas, soluções e validações;
+- tarefas com apontamento de horas e gerenciamento do ciclo de vida;
+- atribuição a usuário ou grupo e vínculo entre tickets;
+- solicitação, aprovação e recusa de validações;
+- documentos vinculados e resultado de pesquisa de satisfação;
+- identificação de tickets cujo prazo de SLA já foi ultrapassado.
 
-- Listar, obter, criar e atualizar problemas
-- Listar, obter, criar e atualizar mudanças
+O servidor também oferece ferramentas para listar, consultar, criar e atualizar
+problemas e mudanças.
 
-### Gestão de Ativos
+### Ativos e informações operacionais
 
-- **Computadores**: listar, obter (com software, portas de rede, conexões, documentos), criar, atualizar e deletar
-- **Softwares**: listar, obter e criar
-- **Equipamentos de rede**: listar, obter e criar
-- **Impressoras**: listar, obter e criar
-- **Monitores**: listar, obter e criar
-- **Telefones**: listar, obter e criar
+Para gestão de ativos, o mcp-glpi cobre computadores, softwares, equipamentos
+de rede, impressoras, monitores e telefones. Detalhes de computadores podem
+incluir softwares, portas de rede, conexões e documentos.
 
-### Base de Conhecimento, Contratos, Fornecedores e Locais
+Há ainda cobertura para artigos da base de conhecimento, contratos,
+fornecedores, locais, projetos, usuários, grupos, categorias e entidades.
 
-- Listar, obter e criar artigos na base de conhecimento (com busca textual)
-- Listar, obter e criar contratos, fornecedores, locais e projetos
+### Busca multicritério e estatísticas
 
-### Usuários, Grupos e Categorias
+A busca genérica usa filtros RSQL com `AND`, `OR`, `AND NOT` e `OR NOT`, além de
+paginação, `forcedisplay` e `fetch_all`. A ferramenta de busca de tickets
+oferece parâmetros mais diretos, como status, responsável, solicitante e
+período.
 
-- Listar usuários, buscar por login, criar usuário
-- Listar e criar grupos, adicionar usuário a grupo
-- Listar categorias de tickets
-- Listar entidades
+Para análises, o servidor disponibiliza:
 
-### Estatísticas e Introspecção
+- contagem de tickets por status, com filtros opcionais de entidade e período;
+- totais de ativos por tipo;
+- distribuição de tickets por status, categoria, técnico, entidade ou mês;
+- catálogo dos campos pesquisáveis;
+- informações da sessão ativa.
 
-- Contagem de tickets por status (com filtro por entidade/período)
-- Totais de ativos por tipo
-- Distribuição de tickets por status, categoria, técnico, entidade ou mês
-- Catálogo de campos pesquisáveis
-- Informações da sessão ativa
+As chaves estrangeiras são resolvidas por padrão nas visualizações de detalhes:
+além do ID, o retorno pode trazer o nome legível. Isso reduz a necessidade de
+consultas adicionais para interpretar responsáveis, grupos e outros vínculos.
 
-### Recursos (Resources)
+## Segurança e validação antes da execução
 
-Além das ferramentas, o servidor expõe recursos no formato `glpi://`:
+As ferramentas carregam anotações MCP que ajudam o cliente a distinguir tipos
+de operação. Consultas, listagens, buscas, contagens e estatísticas recebem
+`readOnlyHint`; operações de atualização, exclusão, definição e atribuição
+recebem `destructiveHint`.
 
-- `glpi://tickets/open` — tickets abertos
-- `glpi://tickets/recent` — tickets recentes
-- `glpi://problems/open` — problemas abertos
-- `glpi://changes/pending` — mudanças pendentes
-- `glpi://computers` — computadores
-- `glpi://groups` — grupos
-- `glpi://categories` — categorias
-- `glpi://stats/tickets` — estatísticas de tickets
-- `glpi://stats/assets` — estatísticas de ativos
+As ferramentas de tickets também validam entradas em tempo de execução com
+Zod. Em vez de deixar um parâmetro inválido chegar ao GLPI e produzir uma falha
+menos clara, o servidor pode retornar um erro `InvalidParams` estruturado.
 
-## Tecnologia
+Na autenticação, a versão 3 usa OAuth2. São suportados `password grant`,
+`client_credentials` e token `bearer`; a autenticação `app_token`/`user_token`
+da API v2 não é suportada no v3. O cliente OAuth2 precisa ser configurado no
+GLPI em **Setup → General → OAuth2 Client**, com o grant type apropriado.
 
-O mcp-glpi é construído com **TypeScript** e executado com **Bun**, oferecendo:
+## Cenários de uso
 
-- **Autenticação OAuth2** com suporte a `password grant`, `client_credentials` e `bearer token`
-- **Camada HTTP unificada** com reautenticação automática em 401, retry em 5xx/429 e timeouts configuráveis
-- **Busca multicritério** com filtros RSQL (`AND`/`OR`/`AND NOT`/`OR NOT`), paginação e `fetch_all`
-- **Mapeamento dinâmico de campos** — as traduções entre `field_id` e nome são cacheadas com TTL de 1 hora
-- **Chaves estrangeiras resolvidas** — detalhes retornam o ID e o nome legível, sem necessidade de consultas adicionais
-- **Validação de entrada em runtime** com Zod — erros claros em vez de falhas no GLPI
-- **Anotações de segurança** — `readOnlyHint` em ferramentas de consulta, `destructiveHint` em operações de escrita/exclusão
-- **Imagem Docker** baseada em `oven/bun:1-alpine`, executando como usuário não-root (`bunuser:1001`)
+Os recursos do mcp-glpi permitem cenários como:
 
-## Como usar
+- **Service desk:** localizar tickets por status, responsável, solicitante ou
+  período e consultar a timeline completa antes de registrar um acompanhamento,
+  tarefa ou solução.
+- **Operações:** identificar tickets com SLA vencido, distribuir chamados por
+  técnico ou entidade e consultar estatísticas por mês, status ou categoria.
+- **Gestão de ativos:** consultar um computador com seus softwares, conexões e
+  documentos, ou verificar os totais do inventário por tipo de ativo.
+- **Gestão de mudanças e problemas:** consultar itens em andamento e usar as
+  ferramentas de criação, atualização, validação e acompanhamento disponíveis
+  no GLPI.
+- **Conhecimento e atendimento:** buscar artigos da base de conhecimento e
+  relacioná-los ao contexto de um atendimento, sem sair do cliente MCP.
 
-### Com Claude Desktop / Claude Code
+Esses cenários descrevem o que as ferramentas permitem fazer; os dados e as
+permissões efetivamente disponíveis continuam dependendo da instância do GLPI,
+do perfil e da entidade usados na conexão.
 
-Adicione ao seu `claude_desktop_config.json`:
+## Configuração rápida com `bunx`
+
+O servidor pode ser iniciado pelo cliente MCP com `bunx`. O exemplo abaixo usa
+valores fictícios e não deve ser preenchido com credenciais no controle de
+versão:
 
 ```json
 {
@@ -113,7 +141,7 @@ Adicione ao seu `claude_desktop_config.json`:
       "command": "bunx",
       "args": ["mcp-glpi"],
       "env": {
-        "GLPI_URL": "https://glpi.sua-empresa.com",
+        "GLPI_URL": "https://glpi.example.com",
         "GLPI_AUTH_METHOD": "password",
         "GLPI_USERNAME": "seu_usuario",
         "GLPI_PASSWORD": "sua_senha",
@@ -124,57 +152,98 @@ Adicione ao seu `claude_desktop_config.json`:
 }
 ```
 
-### Com Docker
+`GLPI_URL` deve ser a URL base sem barra final. Dependendo de
+`GLPI_AUTH_METHOD`, são usadas as variáveis correspondentes para password
+grant, client credentials ou bearer token. O README também documenta opções
+como `GLPI_CLIENT_SECRET`, `GLPI_TIMEOUT_MS`, `GLPI_MAX_RETRIES`,
+`GLPI_ENTITY_ID`, `GLPI_PROFILE_ID` e `GLPI_ENTITY_RECURSIVE`.
+
+## Executando com Docker
+
+Para usar a imagem publicada no GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/eftechcombr/mcp-glpi:1.0
+docker pull ghcr.io/eftechcombr/mcp-glpi:latest
 
 docker run -i --rm \
-  -e GLPI_URL="https://glpi.sua-empresa.com" \
-  -e GLPI_AUTH_METHOD="password" \
-  -e GLPI_USERNAME="seu_usuario" \
-  -e GLPI_PASSWORD="sua_senha" \
-  -e GLPI_CLIENT_ID="seu_client_id" \
-  ghcr.io/eftechcombr/mcp-glpi:1.0
+  --env-file /caminho/absoluto/.env \
+  ghcr.io/eftechcombr/mcp-glpi:latest
 ```
 
-### Pré-requisitos
+O `.env` deve conter a URL do GLPI e as credenciais OAuth2 correspondentes. O
+servidor não precisa de dados persistentes em disco para a operação normal.
+Além disso, a imagem executa com o usuário não-root `bunuser:1001`.
 
-1. Uma instância do GLPI (versão 10 ou 11) com acesso à API
-2. Um cliente OAuth2 configurado no GLPI (Setup → General → OAuth2 Client)
-3. Um dos assistentes de IA compatíveis com MCP (Claude, Cline, Continue, etc.)
+Ao configurar o Docker como processo iniciado por um cliente MCP, mantenha o
+stdin aberto com **`-i`**. Não use **`-t`**: o TTY pode corromper o fluxo do
+protocolo MCP stdio. Uma configuração equivalente no cliente é:
 
-## Por que lançamos isso?
+```json
+{
+  "mcpServers": {
+    "glpi": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm",
+        "--env-file", "/caminho/absoluto/.env",
+        "ghcr.io/eftechcombr/mcp-glpi:latest"
+      ]
+    }
+  }
+}
+```
 
-Na EF-TECH, trabalhamos diariamente com GLPI — seja na operação de service desk dos nossos clientes, seja no desenvolvimento de imagens Docker e Helm Charts para deploy containerizado.
+O transporte **stdio** é apropriado quando o cliente inicia o servidor como um
+subprocesso e troca mensagens JSON-RPC por entrada e saída padrão. Para um
+servidor acessível pela rede, o mcp-glpi também oferece **Streamable HTTP**.
 
-Percebemos que os assistentes de IA estão cada vez mais presentes no dia a dia de times de TI, mas ainda falta uma conexão direta entre eles e as ferramentas de gestão. O mcp-glpi preenche exatamente essa lacuna: em vez de copiar e colar informações manualmente, o assistente de IA consulta e registra dados diretamente no GLPI.
+## Streamable HTTP e modo multi-tenant
 
-## O que vem por aí?
+Defina `MCP_TRANSPORT=http` para executar o servidor HTTP. As principais
+variáveis desse modo são `HOST`, `PORT`, `MCP_PATH` e `SESSION_TTL_MS`; o
+endpoint padrão é `/mcp` e há endpoints de saúde em `/health` e `/`.
 
-O servidor já está funcional e em uso, mas temos vários planos para evolução:
+Em modo single-tenant, `GLPI_URL` e as variáveis de autenticação são definidas
+no ambiente do servidor. Em modo **multi-tenant**, `GLPI_URL` fica vazio e cada
+cliente configura a própria conexão na sessão usando `glpi_configure_connection`.
+As credenciais ficam apenas em memória, não são registradas em logs e são
+revogadas quando a sessão termina ou expira.
 
-- Suporte a workflow de aprovação de mudanças
-- Ferramentas para relatórios personalizados
-- Melhorias na cobertura de ativos (dispositivos de rede, baterias, etc.)
-- Integração com mais assistentes e IDEs
+Exemplo de conexão de um cliente MCP via HTTP:
 
-## Contribua
+```json
+{
+  "mcpServers": {
+    "glpi": {
+      "type": "streamable-http",
+      "url": "https://glpi.example.com/mcp"
+    }
+  }
+}
+```
 
-O mcp-glpi é **open-source** sob licença MIT e está disponível no GitHub:
+No modo multi-tenant, a sequência inicial documentada pelo projeto é consultar
+`glpi_connection_status`, chamar `glpi_configure_connection` com a URL, o
+método OAuth2 e as credenciais correspondentes, e então usar as ferramentas.
+Se houver um proxy reverso, o README recomenda encaminhar o caminho MCP com o
+buffering SSE desabilitado e propagar os cabeçalhos `Host` e `X-Forwarded-*`.
 
-🔗 [https://github.com/eftechcombr/mcp-glpi](https://github.com/eftechcombr/mcp-glpi)
+## Conclusão
 
-Contribuições são bem-vindas! Issues, pull requests e sugestões estão abertos para a comunidade.
+O mcp-glpi 3.4 cria uma interface padronizada para que assistentes compatíveis
+com MCP consultem e operem informações do GLPI. Com 88 ferramentas, cobertura
+de tickets e ITIL, busca multicritério, estatísticas, validação de entrada,
+anotações de segurança, OAuth2 e suporte a stdio ou Streamable HTTP multi-tenant,
+ele atende desde uma configuração local até um serviço HTTP compartilhado por
+sessões.
 
-## Links úteis
+Consulte o [repositório oficial do mcp-glpi no GitHub](https://github.com/eftechcombr/mcp-glpi),
+o [pacote no npm](https://www.npmjs.com/package/mcp-glpi), a
+[documentação da High-Level API do GLPI](https://glpi-user-documentation.readthedocs.io/)
+e a [documentação oficial do Model Context Protocol](https://modelcontextprotocol.io/)
+para experimentar o projeto. Para conhecer o GLPI e as opções de implantação
+da EF-TECH, veja também nossa página de [produto GLPI](/pt-br/produtos/glpi/).
 
-- [Repositório no GitHub](https://github.com/eftechcombr/mcp-glpi)
-- [Pacote no NPM](https://www.npmjs.com/package/mcp-glpi)
-- [Model Context Protocol](https://modelcontextprotocol.io/)
-- [GLPI Project](https://glpi-project.org/)
-- [Documentação da API GLPI](https://glpi-user-documentation.readthedocs.io/)
-
----
-
-Na **EF-TECH**, somos especialistas em GLPI, cloud computing e infraestrutura de TI. Oferecemos suporte especializado para implantação, manutenção e integração do GLPI com ferramentas modernas. [Entre em contato](/pt-br/contato/) para saber como podemos ajudar sua equipe.
+Na EF-TECH, trabalhamos com GLPI, cloud computing e infraestrutura de TI. Se
+você precisa avaliar esse tipo de integração no seu ambiente, [entre em
+contato](/pt-br/contato/) para conversar com nossa equipe.
