@@ -8,7 +8,7 @@ categories: ["produtos"]
 ---
 ## mcp-glpi
 
-O **mcp-glpi v3.4** é um servidor do [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) que conecta assistentes de IA compatíveis ao GLPI. Ele expõe ferramentas padronizadas para consultar e operar tickets, ativos, problemas, mudanças e outros recursos do GLPI, aproximando a IA do trabalho diário de equipes de service desk e operações.
+O **mcp-glpi v3.4** é um servidor do [Model Context Protocol (MCP)](https://modelcontextprotocol.org/) que conecta assistentes de IA compatíveis ao GLPI. Ele é baseado no projeto upstream [GMS64260/mcp-glpi](https://github.com/GMS64260/mcp-glpi) e expõe ferramentas padronizadas para consultar e operar tickets, ativos, problemas, mudanças e outros recursos do GLPI.
 
 O projeto utiliza o caminho estável da **High-Level API v2.3**, compatível com GLPI 11 e GLPI 12. A EF-TECH pode apoiar a avaliação do caso de uso, a implantação e a operação da integração, de acordo com o ambiente e os requisitos da organização.
 
@@ -35,11 +35,11 @@ O servidor também pode apresentar estatísticas por status, categoria, técnico
 
 As ferramentas incluem anotações MCP de segurança para distinguir operações de leitura e alteração. Listagens, consultas, buscas, contagens e estatísticas recebem `readOnlyHint`; operações de atualização, exclusão, definição e atribuição recebem `destructiveHint`. As ferramentas de tickets também usam validação de entrada em tempo de execução com Zod e retornam erros `InvalidParams` estruturados quando os parâmetros são inválidos.
 
-O mcp-glpi v3 usa OAuth2 com `password`, `client_credentials` ou token `bearer`. A autenticação baseada em `app_token` e `user_token` da API v2 **não é suportada na v3**. É necessário configurar no GLPI um cliente OAuth2 com o grant apropriado e fornecer as credenciais por variáveis de ambiente ou pela configuração da sessão HTTP. A página do projeto contém a tabela completa de variáveis e os requisitos de cada método.
+O mcp-glpi v3 usa OAuth2 com `password`, `client_credentials` ou token `bearer`. A autenticação baseada em `app_token` e `user_token` da API v2 **não é suportada na v3**. É necessário configurar no GLPI um cliente OAuth2 com o grant apropriado e fornecer as credenciais por variáveis de ambiente ou pela configuração da sessão HTTP. Consulte o README do projeto para a tabela completa de variáveis e os requisitos de cada método.
 
 ### Transporte: stdio ou Streamable HTTP
 
-No modo **stdio**, o cliente MCP inicia o servidor como subprocesso e troca mensagens pelo stdin/stdout. É o modo adequado para integrações locais, como `bunx` ou um container iniciado pelo próprio cliente. Com Docker, mantenha `-i` para preservar o stdin e **não use `-t`**, pois um TTY pode corromper o fluxo do protocolo:
+No modo **stdio**, o cliente MCP inicia o servidor como subprocesso e troca mensagens pelo stdin/stdout. É o modo adequado para integrações locais ou um container iniciado pelo próprio cliente. Com Docker, mantenha `-i` para preservar o stdin e **não use `-t`**, pois um TTY pode corromper o fluxo do protocolo:
 
 ```bash
 docker pull ghcr.io/eftechcombr/mcp-glpi:latest
@@ -68,7 +68,7 @@ No modo multi-tenant, o cliente consulta `glpi_connection_status`, chama `glpi_c
 
 A EF-TECH pode apoiar a avaliação do uso de IA no service desk, a configuração do GLPI e do cliente MCP, a execução containerizada e a operação do serviço. O escopo é definido conforme a arquitetura, as permissões e os requisitos de segurança do ambiente.
 
-O código-fonte está disponível no [GitHub](https://github.com/eftechcombr/mcp-glpi), com pacote publicado no [npm](https://www.npmjs.com/package/mcp-glpi). Consulte o README para a configuração completa, catálogo de ferramentas e detalhes de desenvolvimento.
+Consulte o [repositório do mcp-glpi no GitHub](https://github.com/eftechcombr/mcp-glpi) e o [projeto upstream](https://github.com/GMS64260/mcp-glpi) para a configuração completa, o catálogo de ferramentas e os detalhes de desenvolvimento.
 
 ---
 

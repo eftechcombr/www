@@ -8,7 +8,7 @@ categories: ["produtos"]
 ---
 ## mcp-glpi
 
-**mcp-glpi v3.4** is a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that connects MCP-compatible AI assistants to GLPI. It exposes standardized tools for querying and operating tickets, assets, problems, changes, and other GLPI resources, bringing AI closer to the daily work of service desk and operations teams.
+**mcp-glpi v3.4** is a [Model Context Protocol (MCP)](https://modelcontextprotocol.org/) server that connects MCP-compatible AI assistants to GLPI. It is based on the upstream [GMS64260/mcp-glpi](https://github.com/GMS64260/mcp-glpi) project and exposes standardized tools for querying and operating tickets, assets, problems, changes, and other GLPI resources.
 
 The project uses the stable **High-Level API v2.3** path, compatible with GLPI 11 and GLPI 12. EF-TECH can support use-case evaluation, deployment, and operation of the integration according to the organization's environment and requirements.
 
@@ -39,7 +39,7 @@ mcp-glpi v3 uses OAuth2 with `password`, `client_credentials`, or a `bearer` tok
 
 ### Transport: stdio or Streamable HTTP
 
-With **stdio** transport, the MCP client starts the server as a subprocess and exchanges messages through stdin/stdout. This is suitable for local integrations such as `bunx` or a container started by the client. With Docker, keep `-i` to preserve stdin and **do not use `-t`**, because a TTY can corrupt the protocol stream:
+With **stdio** transport, the MCP client starts the server as a subprocess and exchanges messages through stdin/stdout. This is suitable for local integrations or a container started by the client. With Docker, keep `-i` to preserve stdin and **do not use `-t`**, because a TTY can corrupt the protocol stream:
 
 ```bash
 docker pull ghcr.io/eftechcombr/mcp-glpi:latest
@@ -68,7 +68,7 @@ In multi-tenant mode, the client checks `glpi_connection_status`, calls `glpi_co
 
 EF-TECH can support AI use-case assessment for service desk, GLPI and MCP client configuration, containerized execution, and service operations. The scope is defined according to the environment's architecture, permissions, and security requirements.
 
-The source code is available on [GitHub](https://github.com/eftechcombr/mcp-glpi), with a package published on [npm](https://www.npmjs.com/package/mcp-glpi). See the README for the complete configuration, tool catalogue, and development details.
+See the [mcp-glpi repository on GitHub](https://github.com/eftechcombr/mcp-glpi) and the [upstream project](https://github.com/GMS64260/mcp-glpi) for complete configuration, the tool catalogue, and development details.
 
 ---
 
