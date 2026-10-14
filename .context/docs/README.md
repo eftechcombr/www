@@ -5,6 +5,7 @@ Welcome to the repository knowledge base. Start with the project overview, then 
 **Blog Posts Reference**
 
 The following blog posts have been added to the documentation index:
+- [mcp-glpi 3.4: conecte assistentes de IA ao GLPI com MCP](../../content/pt-br/blog/mcp-glpi.md) (pt-br) — Post sobre OAuth2, 88 ferramentas, busca multicritério, cobertura ITIL, estatísticas, segurança MCP e transporte stdio/Streamable HTTP multi-tenant
 - [GLPI 12.0.0: Official Major Release and EF-TECH Cloud-Native Distribution](../../content/en/blog/glpi-12-0-0/index.md) (en) — Official release of GLPI 12.0.0, EF-TECH Helm chart 2.12.0 and unprivileged Docker images, rewritten Knowledge Base, Session Manager, and Sudo Mode
 - [GLPI 12.0.0: Lançamento Oficial da Nova Versão Major e Distribuição Cloud-Native da EF-TECH](../../content/pt-br/blog/glpi-12-0-0/index.md) (pt-br) — Lançamento oficial do GLPI 12.0.0, Helm chart 2.12.0 e imagens Docker unprivileged da EF-TECH, nova Base de Conhecimento, Gerenciador de Sessões e Modo Sudo
 - [GLPI 11.0.11: Security Release, Plugin Fixes, and New Features in eftechcombr/glpi](../../content/en/blog/glpi-11-0-11/index.md) (en) — EF-TECH release of GLPI 11.0.11 security release superseding 11.0.10, fixing 6 high vulnerabilities, custom Nginx config templates, and MySQL SSL support
