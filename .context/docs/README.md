@@ -5,6 +5,8 @@ Welcome to the repository knowledge base. Start with the project overview, then 
 **Blog Posts Reference**
 
 The following blog posts have been added to the documentation index:
+- [This Week in AI: Weight-Space Programming, Multi-Agent Orchestration, and Spec-Driven Development 2.0](../../content/en/blog/ai-weekly-2026-11-07.md) (en) — GPT-6 Astra editing Qwen weights without backpropagation, OpenBot free multi-agent orchestration, and Google's Elephant Goldfish Model for spec-driven development 2.0
+- [Esta semana em IA: programação no espaço de pesos, orquestração multiagente e Spec-Driven Development 2.0](../../content/pt-br/blog/ai-weekly-2026-11-07.md) (pt-br) — GPT-6 Astra editando pesos do Qwen sem backpropagation, orquestração multiagente gratuita com OpenBot e o Elephant Goldfish Model para spec-driven development 2.0
 - [mcp-glpi 3.4: conecte assistentes de IA ao GLPI com MCP](../../content/pt-br/blog/mcp-glpi.md) (pt-br) — Post sobre OAuth2, 88 ferramentas, busca multicritério, cobertura ITIL, estatísticas, segurança MCP e transporte stdio/Streamable HTTP multi-tenant
 - [GLPI 12.0.0: Official Major Release and EF-TECH Cloud-Native Distribution](../../content/en/blog/glpi-12-0-0/index.md) (en) — Official release of GLPI 12.0.0, EF-TECH Helm chart 2.12.0 and unprivileged Docker images, rewritten Knowledge Base, Session Manager, and Sudo Mode
 - [GLPI 12.0.0: Lançamento Oficial da Nova Versão Major e Distribuição Cloud-Native da EF-TECH](../../content/pt-br/blog/glpi-12-0-0/index.md) (pt-br) — Lançamento oficial do GLPI 12.0.0, Helm chart 2.12.0 e imagens Docker unprivileged da EF-TECH, nova Base de Conhecimento, Gerenciador de Sessões e Modo Sudo
