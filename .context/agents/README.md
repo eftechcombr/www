@@ -32,3 +32,5 @@ This directory contains ready-to-customize playbooks for AI agents collaborating
 - [Release Blog Post (GLPI 11.0.11)](../../content/en/blog/glpi-11-0-11/index.md)
 - [Release Blog Post (GLPI 12.0.0-rc1)](../../content/en/blog/glpi-12-0-0-rc1.md)
 - [Blog Post (mcp-glpi 3.4)](../../content/pt-br/blog/mcp-glpi.md)
+- [Release Blog Post (mcp-glpi v1.2.0)](../../content/en/blog/mcp-glpi-1-2-0.md)
+- [Post de Release (mcp-glpi v1.2.0, pt-br)](../../content/pt-br/blog/mcp-glpi-1-2-0.md)
